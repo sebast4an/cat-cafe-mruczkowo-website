@@ -1,4 +1,4 @@
 # cat-cafe-mruczkowo-website
-**EN:** _Website for my client: Cat Café Mruczkowo in Gliwice_
+**EN:** Website for my client: _Cat Café Mruczkowo in Gliwice_
 <br>
-**PL:** _Strona dla mojego klienta: Kocia Kawiarnia Mruczkowo w Gliwicach_
+**PL:** Strona dla mojego klienta: _Kocia Kawiarnia Mruczkowo w Gliwicach_
