@@ -1,5 +1,42 @@
-$blueColor: #0f49a0;
+/* Variables */
+$mainColor: hsl(44, 30%, 65%);
+
+$fontFamily: 'Montserrat', sans-serif;
+
+@import 'mixins';
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+*,
+*::before,
+*::after,
+html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+input,
+button,
+html,
+body {
+  font-family: $fontFamily;
+}
 
 h1 {
-  color: $blueColor;
+  color: $mainColor;
+  font-style: 400;
+  font-weight: 800;
+  font-size: 4rem;
+  text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.2);
+}
+
+
+.navigation {
+  &__header {
+    &--logo {
+      background-color: $mainColor;
+    }
+    
+  }
 }

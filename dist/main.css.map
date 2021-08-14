@@ -1,0 +1,1 @@
+{"version":3,"file":"main.css","mappings":"AAEA,GACE,aAHU,C","sources":["webpack://sebast4an-webpack-template/./src/scss/main.scss"],"sourcesContent":["$blueColor: #0f49a0;\n\nh1 {\n  color: $blueColor;\n}\n"],"names":[],"sourceRoot":""}
