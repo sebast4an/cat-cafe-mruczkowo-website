@@ -1,5 +1,6 @@
 /*  Variables  */
 $mainColor: hsl(44, 30%, 65%);
+$whiteColor: hsl(0, 0%, 98%);
 
 /*  Font  */
 $fontFamily: 'Montserrat', sans-serif;
@@ -13,6 +14,7 @@ $semiBoldFont: 700;
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
 
+/*  Typographics and global settings  */
 *,
 *::before,
 *::after,
@@ -38,6 +40,7 @@ body {
 h1 {
   color: $mainColor;
   font-weight: $semiBoldFont;
+  text-transform: uppercase;
   font-size: 4rem;
   text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.2);
 }
@@ -51,19 +54,83 @@ a {
   text-decoration: none;
 }
 
+/*  Website  */
 
 .navigation {
   position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
   border-bottom: 1px solid $mainColor;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $whiteColor;
 
   &__header {
+    margin: 0;
+    padding: 0;
+
     &--logo {
+      margin: 0;
       background-color: $mainColor;
+      width: 150px;
+      height: 150px;
+      padding: 1rem 1.4rem 1rem 1rem;
+      border-radius: 0 0 3rem 0;
     }
+  }
+}
+
+.menu {
+  &__hamburger-button {
+    margin: 1rem;
+    width: 5rem;
+    height: 4rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: flex-end;
+    background-color: transparent;
+    border: 0;
+
+
+    &--line {
+      border-radius: 10px;
+      background-color: $mainColor;
+      height: 4px;
+
+      &:nth-child(1) {
+        width: 100%;
+      }
+
+      &:nth-child(2) {
+        width: 80%;
+      }
+
+      &:nth-child(3) {
+        width: 100%;
+      }
+
+      &:nth-child(4) {
+        width: 85%;
+      }
+    }
+  }
+
+  &__links-list {
+    display: none;
+    list-style-type: none;
   }
 }
 
 .start-page {
   height: 100vh;
   background: linear-gradient(180deg, rgba(237, 240, 227, 0) 0%, rgba(237, 240, 227, 0.4) 100%);
+
+  &__title {
+    margin: 20rem 0;
+  }
 }
