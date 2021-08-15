@@ -1,7 +1,12 @@
-/* Variables */
+/*  Variables  */
 $mainColor: hsl(44, 30%, 65%);
 
+/*  Font  */
 $fontFamily: 'Montserrat', sans-serif;
+$thinFont: 300;
+$normalFont: 400;
+$boldFont: 500;
+$semiBoldFont: 700;
 
 @import 'normalize.css';
 @import 'mixins';
@@ -32,14 +37,24 @@ body {
 
 h1 {
   color: $mainColor;
-  font-weight: 800;
+  font-weight: $semiBoldFont;
   font-size: 4rem;
   text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.2);
+}
+
+h2 {
+  font-weight: $boldFont;
+  font-size: 2rem;
+}
+
+a {
+  text-decoration: none;
 }
 
 
 .navigation {
   position: fixed;
+  border-bottom: 1px solid $mainColor;
 
   &__header {
     &--logo {
