@@ -1,6 +1,7 @@
 /*  Variables  */
-$mainColor: hsl(44, 30%, 65%);
-$whiteColor: hsl(0, 0%, 98%);
+$mainColor: #c1b38c;
+$secondColor: #e9e0c9;
+$whiteColor: #fff;
 
 /*  Font  */
 $fontFamily: 'Montserrat', sans-serif;
@@ -24,8 +25,11 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 
-input,
 button,
+input,
+optgroup,
+select,
+textarea,
 html,
 body {
   font-family: $fontFamily;
@@ -41,7 +45,7 @@ h1 {
   color: $mainColor;
   font-weight: $semiBoldFont;
   text-transform: uppercase;
-  font-size: 4rem;
+  font-size: 2rem;
   text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.2);
 }
 
@@ -56,51 +60,48 @@ a {
 
 /*  Website  */
 
-.navigation {
+.container .navigation {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+  height: 75px;
   margin: 0;
-  border-bottom: 1px solid $mainColor;
+  border-bottom: 1px solid $secondColor;
   display: flex;
   flex-flow: row wrap;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   background-color: $whiteColor;
 
-  &__header {
+  &__logo {
     margin: 0;
-    padding: 0;
-
-    &--logo {
-      margin: 0;
-      background-color: $mainColor;
-      width: 150px;
-      height: 150px;
-      padding: 1rem 1.4rem 1rem 1rem;
-      border-radius: 0 0 3rem 0;
-    }
+    background-color: $mainColor;
+    width: 150px;
+    height: 150px;
+    padding: 0.5rem 1rem 0.5rem 0.5rem;
+    border-radius: 0 0 3rem 0;
   }
 }
 
 .menu {
   &__hamburger-button {
-    margin: 1rem;
-    width: 5rem;
-    height: 4rem;
+    margin: 0.8rem;
+    width: 4rem;
+    height: 3rem;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-around;
     align-items: flex-end;
     background-color: transparent;
     border: 0;
-
+    
 
     &--line {
-      border-radius: 10px;
+      border-radius: 5px;
       background-color: $mainColor;
       height: 4px;
+      transition: background-color .3s ease;
 
       &:nth-child(1) {
         width: 100%;
@@ -124,6 +125,17 @@ a {
     display: none;
     list-style-type: none;
   }
+
+  &:hover {
+    .menu__hamburger-button--line {
+      background-color: lighten($mainColor, 15%);
+    }
+  }
+
+  &:focus {
+    border: 2px solid $mainColor;
+  }
+
 }
 
 .start-page {
@@ -131,6 +143,7 @@ a {
   background: linear-gradient(180deg, rgba(237, 240, 227, 0) 0%, rgba(237, 240, 227, 0.4) 100%);
 
   &__title {
-    margin: 20rem 0;
+    margin: 10rem 1rem;
+    max-width: 100%;
   }
 }
