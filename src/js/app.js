@@ -3,3 +3,4 @@ import '../scss/main.scss';
 
 //svg
 import '../assets/logo-mruczkowo.svg';
+import '../assets/Paw.svg';
