@@ -14,8 +14,10 @@ module.exports = {
     clean: true,
   },
   devServer: {
-    contentBase: path.resolve(__dirname, `dist`),
-    watchContentBase: true,
+    liveReload: true,
+    static: {
+      directory: path.join(__dirname, 'dist'),
+    },
     hot: true,
     historyApiFallback: {
       index: 'index.html',
