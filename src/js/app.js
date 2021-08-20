@@ -1,9 +1,12 @@
+//assets
+import '../assets/coffee.jpg';
+import '../assets/wiktor.jpg';
+import '../assets/wiktor_main.jpg';
+import '../assets/background.svg';
+import '../assets/logo-mruczkowo.svg';
+
 //scss
 import '../scss/main.scss';
-
-//svg
-import '../assets/logo-mruczkowo.svg';
-import '../assets/Paw.svg';
 
 (() => {
   const mobileMenuButton = document.querySelector('.menu__hamburger-button');
