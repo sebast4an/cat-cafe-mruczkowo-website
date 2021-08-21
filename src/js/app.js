@@ -1,9 +1,12 @@
 //assets
+import '../assets/background.svg';
 import '../assets/coffee.jpg';
 import '../assets/wiktor.jpg';
 import '../assets/wiktor_main.jpg';
-import '../assets/background.svg';
 import '../assets/logo-mruczkowo.svg';
+
+//icon
+import '../assets/icon/open.svg';
 
 //scss
 import '../scss/main.scss';
