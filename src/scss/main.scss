@@ -51,14 +51,21 @@ h1 {
   font-size: 2rem;
   line-height: 3rem;
   letter-spacing: 0.1em;
+  
 }
 
 h2 {
+  color: $greenColor;
   font-weight: $boldFont;
   font-size: 2rem;
 }
 
-a {
+h3 {
+  color: lighten($greenColor, 2%);
+}
+
+p, a {
+  color: $darkGreenColor;
   text-decoration: none;
 }
 
@@ -162,11 +169,11 @@ a {
 }
 
 .start-page {
-  background: $greenColor url('../assets/background.svg') fixed; /* background file by SVGBackgrounds.com */
+  background: $greenColor url('../assets/background.svg') fixed; /* background by SVGBackgrounds.com */
   min-height: 100vh;
 
   &__title {
-    margin: 1.5rem;
+    margin: 1rem;
     padding: 100px 0 0 0;
     text-shadow: 1px 1px 20px $greenColor;
 
@@ -199,6 +206,18 @@ a {
   }
 }
 
-.opening-hours {
+.information {
+  margin: 0 20px;
+  padding: 1px 0 0 0;
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+
+
+  &__news {
+    max-width: 90%;
+  }
 
 }
+
