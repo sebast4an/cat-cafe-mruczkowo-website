@@ -1,25 +1,36 @@
 import catsJSON from '../cats.json';
 
-(() => {
-  const catsContainer = document.querySelector('.adoption__cats');
-  if (catsContainer == undefined || catsContainer == null) return;
+const appendCats = data => {
+  const catsContainer = document.querySelector('.cats-adoption');
+  if (catsContainer == null || catsContainer == undefined) return;
+  const fragment = document.createDocumentFragment();
 
-  // const renderCats = () => {
-  //   const fragment = document.createDocumentFragment();
-  // };
-})();
+  const render = (data, key) => {
+    const cat = document.createElement('section');
+    cat.classList.add(`cats-adoption`);
+    const imageSrc = `/assets/images/${data[key].toLowerCase()}.jpg"`;
+    cat.innerHTML = `
+      <img class="cats-adoption__image" src="${imageSrc}" alt="Zdjęcie przedstawiające kota o imieniu ${data[key]}" />
+      <h3 class="cats-adoption__name">${data[key]}</h3>
+    `;
+    fragment.appendChild(cat);
+  };
+  let catNumber = 0;
+  data.forEach(value => {
+    catNumber++;
+    render(value, catNumber);
+  });
+  catsContainer.innerHTML = '';
+  catsContainer.append(fragment);
+};
 
-const getCats = async () => {
-  const URL = catsJSON;
-  console.log(URL);
-
+(async () => {
   try {
-    const response = await fetch(URL);
+    const response = await fetch(catsJSON);
     const data = await response.json();
-    console.log(data['1']);
+    if (data == null) return;
+    appendCats(data);
   } catch (error) {
     console.log(error);
   }
-};
-
-getCats(0);
+})();

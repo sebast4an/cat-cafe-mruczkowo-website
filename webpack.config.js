@@ -92,10 +92,10 @@ module.exports = {
         },
       },
       {
-        test: /\.(json|jpg)$/i,
+        test: /\.json$/i,
         type: 'asset/resource',
         generator: {
-          filename: 'cats/[name][ext][query]',
+          filename: '[name][ext][query]',
         },
       },
     ],
