@@ -18,7 +18,7 @@
   </head>
   <body>
     <nav class="navigation">
-      <a href="start-page" rel="index">
+      <a href="#start-page" rel="index">
         <img
           class="navigation__logo"
           src="./assets/svg/logo-mruczkowo.svg"
@@ -43,10 +43,10 @@
             <a href="#adoption" class="menu__list-element--link"> Koty do adopcji </a>
           </li>
           <li class="menu__list-element">
-            <a href="#help" class="menu__list-element--link"> Jak mogę pomóc? </a>
+            <a href="#about" class="menu__list-element--link"> O Kociej Kawiarni </a>
           </li>
           <li class="menu__list-element">
-            <a href="#statute" class="menu__list-element--link"> Regulamin kawiarni </a>
+            <a href="#help" class="menu__list-element--link"> Jak możesz pomóc </a>
           </li>
           <li class="menu__list-element">
             <a href="#contact" class="menu__list-element--link"> Kontakt </a>
@@ -54,7 +54,8 @@
         </ul>
       </section>
     </nav>
-    <section class="start-page" id="#start-page">
+
+    <section class="start-page" id="start-page">
       <h1 class="start-page__title">
         <span class="start-page__title--text">Dom</span>
         <span class="start-page__title--text">Tymczasowy</span>
@@ -62,14 +63,13 @@
         <span class="start-page__title--text">Kawiarnia</span>
         <span class="start-page__title--text">Mruczkowo</span>
         <span class="start-page__title--text">w Gliwicach</span>
-        <button type="button">
-          Zapraszamy!
-          <img src="./assets/svg/down-arrow.svg" />
-          <span class="fal fa-adjust" aria-hidden="true"></span>
-          <span class="visuallyhidden">Adjust</span>
-        </button>
       </h1>
+      <button class="start-page__scroll-button" type="button" name="Zapraszamy!" value="Zapraszamy">
+        <img class="start-page__scroll-button--icon" src="./assets/svg/down-arrow.svg" aria-hidden="true" />
+        <span class="start-page__scroll--name">Zapraszamy</span>
+      </button>
     </section>
+
     <main class="information" id="information">
       <section class="information__opening-hours opening-hours">
         <header class="opening-hours__header">
@@ -101,14 +101,25 @@
         </div>
       </section>
     </main>
-    <section class="adoption" id="adoption"></section>
-    <article class="help">
-      <header class="help__header">
-        <h2 class="help__header--title">Jak mogę pomóc?</h2>
+
+    <section class="adoption" id="adoption">
+      <header class="adoption__header">
+        <h2 class="adoption__header--title">Koty do adopcji</h2>
       </header>
-      <section class="help__how-to-help"></section>
+      <section class="adoption__cats"></section>
+    </section>
+
+    <article class="about" id="about">
+      <header class="about__header">
+        <h2 class="about__header--title">Mruczkowo - Kocia kawiarnia, dom tymczasowy</h2>
+      </header>
+      <section class="about__description">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam nisi exercitationem aut iusto alias odio temporibus possimus optio, dolorem dolores, omnis est beatae magnam incidunt? Provident alias obcaecati necessitatibus quaerat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore nesciunt in sed itaque alias veritatis magnam perspiciatis reprehenderit repellendus illum distinctio accusamus dignissimos, dolor animi autem a placeat error sequi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi molestiae optio quidem quaerat assumenda sapiente repellat placeat mollitia voluptatibus. Aliquid qui cupiditate necessitatibus quasi esse expedita fuga cumque dicta incidunt!</p>
+      </section>
     </article>
-    <aside class="statute" id="statute"></aside>
+
+    <section class="help" id="help"></section>
+
     <footer class="contact" id="contact"></footer>
   </body>
 </html>
