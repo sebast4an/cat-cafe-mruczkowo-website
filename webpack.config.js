@@ -78,8 +78,18 @@ module.exports = {
         ],
       },
       {
-        test: /\.(png|jpg|svg)$/i,
+        test: /\.(svg)$/i,
         type: 'asset/resource',
+        generator: {
+          filename: 'assets/svg/[name][ext][query]',
+        },
+      },
+      {
+        test: /\.(png|jpg)$/i,
+        type: 'asset/resource',
+        generator: {
+          filename: 'assets/images/[name][ext][query]',
+        },
       },
     ],
   },
@@ -87,7 +97,7 @@ module.exports = {
     new ESLintPlugin(),
     new MiniCssExtractPlugin(),
     new HtmlWebpackPlugin({
-      title: 'My App',
+      title: 'Kocia Kawiarnia Mruczkowo',
       filename: 'index.html',
       template: 'src/index.html',
     }),
