@@ -1,7 +1,7 @@
 {
-  "name": "sebast4an-webpack-template",
+  "name": "sebast4an-cat-cafe-mruczkowo-website",
   "version": "1.0.0",
-  "description": "sebast4an, webpack, template",
+  "description": "sebast4an, cat, cafe, cat cafe, mruczkowo, gliwice",
   "main": "index.js",
   "scripts": {
     "dev": "webpack --mode development --watch",
@@ -13,10 +13,11 @@
     "defaults"
   ],
   "repository": {
-    "type": "git"
+    "type": "git",
+    "url": "git+https://github.com/sebast4an/cat-cafe-mruczkowo-website.git"
   },
   "author": "sebast4an",
-  "license": "ISC",
+  "homepage": "https://github.com/sebast4an/cat-cafe-mruczkowo-website#readme",
   "devDependencies": {
     "@babel/core": "^7.15.0",
     "@babel/eslint-parser": "^7.15.0",

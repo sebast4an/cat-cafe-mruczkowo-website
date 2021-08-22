@@ -91,6 +91,13 @@ module.exports = {
           filename: 'assets/images/[name][ext][query]',
         },
       },
+      {
+        test: /\.(json|jpg)$/i,
+        type: 'asset/resource',
+        generator: {
+          filename: 'cats/[name][ext][query]',
+        },
+      },
     ],
   },
   plugins: [
