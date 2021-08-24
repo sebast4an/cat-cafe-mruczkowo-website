@@ -268,15 +268,53 @@ a {
 }
 
 .adoption {
-  padding: 20px 20px;
+  padding: 1.25rem;
   background-color: $lightGreenColor;
   min-height: 100vh;
-  
+
   &__header {
-    margin: 1rem;
-    
+    margin: 1rem 0;
+
     &--title {
       color: $whiteColor;
+    }
+  }
+}
+
+.cats-adoption {
+  max-width: 100%;
+
+  &__cat {
+    margin: 40px 0;
+    box-shadow: 0 2.8px 2.2px -30px rgba(0, 0, 0, 0.008), 0 6.7px 5.3px -30px rgba(0, 0, 0, 0.012), 0 12.5px 10px -30px rgba(0, 0, 0, 0.015),
+      0 22.3px 17.9px -30px rgba(0, 0, 0, 0.018), 0 41.8px 33.4px -30px rgba(0, 0, 0, 0.022), 0 100px 80px -30px rgba(0, 0, 0, 0.03);
+    transition: transform 0.6s ease-in-out;
+
+    &--image {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 0.4rem 0.4rem 0 0;
+      border-bottom: 0;
+      overflow: hidden;
+    }
+
+    &--name {
+      margin: 0;
+      padding: 0.5rem;
+      background-color: $whiteColor;
+      border-radius: 0 0 0.4rem 0.4rem;
+      border-top: 0;
+      color: $darkGreenColor;
+      letter-spacing: 1px;
+
+      &::first-letter {
+        text-transform: uppercase;
+      }
+    }
+
+    &:hover {
+      transform: scale(94%) rotate(3deg);
     }
   }
 }
