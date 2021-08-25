@@ -58,6 +58,7 @@ h2 {
   color: $greenColor;
   font-weight: $boldFont;
   font-size: 2rem;
+  line-height: 2.6rem;
 }
 
 h3 {
@@ -69,6 +70,7 @@ p,
 a {
   color: $darkGreenColor;
   text-decoration: none;
+  line-height: 1.8rem;
 }
 
 /*  Website  */
@@ -230,7 +232,8 @@ a {
 }
 
 .information {
-  padding: 20px 20px 100px 20px;
+  @include defaultPadding();
+  padding-bottom: 6.25rem;
   min-height: 100vh;
   display: flex;
   flex-flow: column wrap;
@@ -268,7 +271,7 @@ a {
 }
 
 .adoption {
-  padding: 1.25rem;
+  @include defaultPadding();
   background-color: $lightGreenColor;
   min-height: 100vh;
 
@@ -315,6 +318,24 @@ a {
 
     &:hover {
       transform: scale(94%) rotate(3deg);
+    }
+  }
+}
+
+.about {
+  @include defaultPadding();
+
+  &__description {
+    text-align: justify;
+
+    &--image {
+      width: 70%;
+      height: auto;
+      border-radius: 1rem 10rem 10rem 1rem;
+      margin: 14% 0 3% 0;
+      float: left;
+      shape-outside: margin-box;
+      transform: translateX(-2rem);
     }
   }
 }
