@@ -328,7 +328,7 @@ a {
   &__description {
     text-align: justify;
 
-    &--image {
+    &--image-1 {
       width: 70%;
       height: auto;
       border-radius: 1rem 10rem 10rem 1rem;
@@ -336,6 +336,17 @@ a {
       float: left;
       shape-outside: margin-box;
       transform: translateX(-2rem);
+    }
+
+    &--image-2 {
+      transform: translateX(2rem);
+      width: 70%;
+      height: auto;
+      border-radius: 6rem 1rem 1rem 6rem;
+      margin: 14% 0 3% 0;
+      float: right;
+      shape-outside: margin-box;
+
     }
   }
 }
