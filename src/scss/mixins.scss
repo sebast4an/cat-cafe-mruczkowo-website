@@ -10,7 +10,7 @@
 }
 
 @mixin defaultPadding () {
-   padding: 1.25rem;
+   padding: 1.25rem 1.25rem 4rem 1.25rem;
 }
 
 @mixin textHighlight ($color) {
