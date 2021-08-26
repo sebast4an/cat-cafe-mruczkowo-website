@@ -13,3 +13,9 @@
    padding: 1.25rem;
 }
 
+@mixin textHighlight ($color) {
+   font-weight: $boldFont;
+   color: $color;
+   letter-spacing: 1px;
+}
+
