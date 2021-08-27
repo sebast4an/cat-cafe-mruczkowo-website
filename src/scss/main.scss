@@ -175,7 +175,8 @@ a {
 }
 
 .start-page {
-  background: $greenColor url('../assets/svg/background.svg') fixed; /* background by SVGBackgrounds.com */
+  background-color: $greenColor;
+  background: url('../assets/svg/start-page-background.svg');
   min-height: 100vh;
   overflow: hidden;
 
@@ -183,24 +184,13 @@ a {
     margin: 1rem;
     padding: 100px 0 0 0;
     text-shadow: 1px 1px 20px $greenColor;
+    position: relative;
+    z-index: 1;
 
     &--text {
-      display: inline-block;
-      position: relative;
+      display: block;
       z-index: 1;
       margin: 0;
-
-      &:before {
-        position: absolute;
-        content: '';
-        top: 0;
-        left: -10px;
-        width: calc(100% + 20px);
-        height: 104%;
-        background-color: lighten($greenColor, 5%);
-        z-index: -1;
-        border-radius: 2px;
-      }
 
       &:nth-child(2) {
         margin: 0 0 1.3rem 0;
@@ -210,9 +200,21 @@ a {
         margin: 0 0 1.3rem 0;
       }
     }
+
+    &:before {
+      position: absolute;
+      content: '';
+      top: 100px;
+      left: -0.5rem;
+      width: 9rem;
+      height: 22rem;
+      background-color: $greenColor;
+      z-index: -1;
+    }
   }
 
   &__scroll-button {
+    display: none;
     background-color: lighten($greenColor, 5%);
     border: 0;
     margin: 0 calc(1rem - 10px) calc(1rem - 10px) calc(1rem - 10px);
@@ -220,12 +222,13 @@ a {
     text-transform: uppercase;
     font-weight: $thinFont;
     font-size: 2rem;
-    display: flex;
+    /* display: flex */
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
 
     &--icon {
+      display: none;
       width: 2rem;
       height: auto;
       padding: 0.2rem;
@@ -235,12 +238,21 @@ a {
 }
 
 .information {
-  @include defaultPadding();
-  padding-bottom: 6.25rem;
-  min-height: 100vh;
-  display: flex;
-  flex-flow: column wrap;
-  align-items: flex-start;
+  &__top-waves {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  &__box {
+    @include defaultPadding();
+    padding-bottom: 6.25rem;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+  }
 }
 
 .opening-hours {
@@ -309,8 +321,8 @@ a {
   background: $darkColor url('../assets/svg/background-string.svg') no-repeat 100% 200px / cover;
   min-height: 100vh;
 
-  &__top-waves{
-    margin:0;
+  &__top-waves {
+    margin: 0;
     padding: 0;
     width: 100%;
     height: auto;
