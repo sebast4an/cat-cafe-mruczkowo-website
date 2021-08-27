@@ -75,6 +75,14 @@ a {
   line-height: 2rem;
 }
 
+/* help class for top and bottom svg shapes */
+.svg-shapes {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+}
+
 /*  Website  */
 .navigation {
   position: fixed;
@@ -238,13 +246,6 @@ a {
 }
 
 .information {
-  &__top-waves {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: auto;
-  }
-
   &__box {
     @include defaultPadding();
     padding-bottom: 6.25rem;
@@ -320,13 +321,6 @@ a {
 .adoption {
   background: $darkColor url('../assets/svg/background-string.svg') no-repeat 100% 200px / cover;
   min-height: 100vh;
-
-  &__top-waves {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: auto;
-  }
 
   &__box {
     @include defaultPadding();
@@ -408,15 +402,22 @@ a {
 
 .help {
   @include defaultPadding();
+  background-color: $greenColor;
 }
 
 .personal-help {
+  &__header {
+    &--title {
+      color: $whiteColor;
+    }
+  }
   &__description {
     &--text {
+      color: $greyColor;
       text-align: justify;
 
       span {
-        @include textHighlight($darkGreenColor);
+        @include textHighlight($whiteColor);
       }
     }
   }
