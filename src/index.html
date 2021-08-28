@@ -65,10 +65,6 @@
         <span class="start-page__title--text">w Gliwicach</span>
         <span class="start-page__title--text">+48 555 666 777</span>
       </h1>
-      <button class="start-page__scroll-button" type="button" name="Zapraszamy!" value="Zapraszamy">
-        <img class="start-page__scroll-button--icon" src="./assets/svg/down-arrow.svg" aria-hidden="true" />
-        <span class="start-page__scroll--name">Zapraszamy</span>
-      </button>
     </section>
 
     <main class="information" id="information">
@@ -76,9 +72,9 @@
       <div class="information__box">
         <section class="information__opening-hours opening-hours">
           <header class="opening-hours__header">
-            <h2 class="opening-hours__header--title">Godziny otwarcia:</h2>
+            <h2 class="opening-hours__header--title title-white-bg">Godziny otwarcia:</h2>
           </header>
-          <div class="opening-hours__details">
+          <div class="opening-hours__description description-white-bg">
             <h3>Poniedziałek - Piątek</h3>
             <p>15:00 - 20:00</p>
             <h3>Sobota - Niedziela</h3>
@@ -87,7 +83,7 @@
         </section>
         <section class="information__news news">
           <header class="news__header">
-            <h2 class="news__header--title">Aktualności:</h2>
+            <h2 class="news__header--title title-white-bg">Aktualności:</h2>
           </header>
           <div
             class="news__facebook fb-page"
@@ -133,6 +129,7 @@
       <section class="adoption__box">
         <header class="adoption__header">
           <h2 class="adoption__header--title">Mieszkańcy:</h2>
+          <p class="adoption__header--subtitle">Czyli koty do adopcji. Adopcja jest możliwa po pozytywnej weryfikacji i spełnieniu formalności. Zapraszamy do odwiedzenia nas lub kontaktu.</p>
         </header>
         <div class="adoption__cats-adoption cats-adoption"></div>
       </section>
@@ -141,21 +138,21 @@
     <article class="about" id="about">
       <div class="about__box">
         <header class="about__header">
-          <h2 class="about__header--title">Mruczkowo</h2>
+          <h2 class="about__header--title title-white-bg">Mruczkowo</h2>
         </header>
-        <section class="about__description">
-          <p class="about__description--text">
+        <section class="about__description description-white-bg">
+          <p>
             Kocia Kawiarnia i Dom tymczasowy Mruczkowo jest otwarta dla miłośników kotów. To nowatorski typ kawiarni, ponieważ poza
             wyśmienitymi deserami możecie Państwo pobawić się z naszymi podopiecznymi — kotami, dla których kawiarnia jest domem
             tymczasowym. Kawiarnia działa od 2018 roku. Początkowo Mruczkowo znajdowało się w Zabrzu na ulicy 3 Maja. Obecnie jesteśmy w
             Gliwicach na ulicy Dworcowej.
-            <img class="about__description--image-1" src="./assets/images/kocia_kawiarnia_1.jpg" />
+            <img class="about__description--image-left" src="./assets/images/kocia_kawiarnia_1.jpg" />
             <strong>Wszystkie koty będące w kawiarni są do adopcji,</strong> więc jeżeli ktoś zakocha się w naszym kawiarnianym kocie, może
             po pozytywnej weryfikacji i spełnieniu formalności zabrać go do domu i cieszyć się życiem domowego mruczka. W naszej kawiarni
             menu nie jest obszerne, ale większość potraw jest robiona na miejscu, bo mamy kuchnię. Ciasta (na przykład sernik z frużeliną
             jeżynową czy cytrynowe na biszkopcie) piecze Domowa Piekarenka. Można tu się napić kawy: z ekspresu, cappuccino, flat white z
             puszystą warstwą mleka na wierzchu, latte i mrożoną frappe oraz herbaty.
-            <img class="about__description--image-2" src="./assets/images/kocia_kawiarnia_3.jpg" />
+            <img class="about__description--image-right" src="./assets/images/kocia_kawiarnia_3.jpg" />
             Podajemy zimne napoje takie jak: cola, fanta, sprite, soki cappa, woda, oranżada, smoothies (zielony albo różowy), mleczne
             shejki (bananowy lub czekoladowy). Oferujemy desery lodowe, galaretki z owocami i bitą śmietaną. Na jedzenie i picie trzeba
             uważać na koty, ponieważ koty z natury to łakomczuchy, a kotów nie wolno dokarmiać – taki regulamin. W kociarni mruczki mają
@@ -163,7 +160,7 @@
             Uwielbiają leżeć na poduszkach, na krzesłach i ludzkich nogach.
             <strong>Pamiętajcie, że teren kawiarni należy do kotów.</strong>
           </p>
-          <p class="about__description--text">Serdeczne zapraszamy do Mruczkowa na kawę, desery i zabawę kotami.</p>
+          <p>Serdeczne zapraszamy do Mruczkowa na kawę, desery i zabawę kotami.</p>
         </section>
       </div>
     </article>
@@ -225,6 +222,9 @@
           <h2 class="contact__header--title">Kontakt</h2>
           <p class="contact__header--subtitle">W sprawie rezerwacji prosimy o kontakt telefoniczny lub przez wiadomość na Facebooku.</p>
         </header>
+        <section class="contact__description">
+          <h4>+48 555 666 777</h4>
+        </section>
         <div
           class="contact__facebook fb-page"
           data-href="https://www.facebook.com/Kocia-Kawiarnia-Mruczkowo-Gliwice-1512296442220341/"
@@ -238,34 +238,58 @@
             <a href="https://www.facebook.com/Kocia-Kawiarnia-Mruczkowo-Gliwice-1512296442220341/">Kocia Kawiarnia Mruczkowo Gliwice</a>
           </blockquote>
         </div>
-        <section class="contact__description">
-          <p class="contact__description--text">+48 555 666 777</p>
-        </section>
       </div>
     </section>
 
     <footer class="footer" id="footer">
+      <section class="footer-about">
+        <header class="footer-about__header">
+          <h4 class="footer-about__header--title">Mruczkowo</h4>
+        </header>
+        <section class="footer-about__description">
+          <p>
+            To nowatorski typ kawiarni, ponieważ poza wyśmienitymi deserami możecie Państwo pobawić się z naszymi podopiecznymi — kotami,
+            dla których kawiarnia jest domem tymczasowym. <a href="#about" class="footer-about__description--link"> Więcej informacji...</a>
+          </p>
+        </section>
+      </section>
       <section class="footer-nav">
         <header class="footer-nav__header">
           <h4 class="footer-nav__header--title">Nawigacja</h4>
         </header>
         <ul class="footer-nav__list">
-          <li class="footer-nav__list--element">
-            <a href="#information" class="footer-nav__list--element--link"> Aktualności i godziny otwarcia </a>
+          <li class="footer-nav__element">
+            <a href="#information" class="footer-nav__element--link"> Aktualności i godziny otwarcia </a>
           </li>
-          <li class="footer-nav__list--element">
-            <a href="#where" class="footer-nav__list--element--link"> Gdzie jesteśmy </a>
+          <li class="footer-nav__element">
+            <a href="#where" class="footer-nav__element--link"> Gdzie jesteśmy </a>
           </li>
-          <li class="footer-nav__list--element">
-            <a href="#adoption" class="footer-nav__list--element--link"> Koty do adopcji </a>
+          <li class="footer-nav__element">
+            <a href="#adoption" class="footer-nav__element--link"> Koty do adopcji </a>
           </li>
-          <li class="footer-nav__list--element">
-            <a href="#about" class="footer-nav__list--element--link"> O Mruczkowie </a>
+          <li class="footer-nav__element">
+            <a href="#about" class="footer-nav__element--link"> O Mruczkowie </a>
           </li>
-          <li class="footer-nav__list--element">
-            <a href="#help" class="footer-nav__list--element--link"> Jak możesz pomóc </a>
+          <li class="footer-nav__element">
+            <a href="#help" class="footer-nav__element--link"> Jak możesz pomóc </a>
           </li>
         </ul>
+      </section>
+      <section class="social">
+        <header class="social__header">
+          <h4 class="social__header--title">Śledź nas na:</h4>
+        </header>
+        <div class="social__icon">
+          <a class="social__link">
+            <img class="social__link--image" src="./assets/svg/facebook-icon.svg" />
+          </a>
+          <a hrec="social__link">
+            <img class="social__link--image" src="./assets/svg/instagram-icon.svg" />
+          </a>
+        </div>
+      </section>
+      <section class="author">
+        <p>Projekt i wykonanie: <a class="author__link" href="https://github.com/sebast4an">Sebastian Szczypiński</a></p>
       </section>
     </footer>
   </body>

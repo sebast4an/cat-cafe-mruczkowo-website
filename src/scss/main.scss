@@ -4,7 +4,7 @@ $darkGreenColor: #004643;
 $lightGreenColor: #47a19c;
 $greyColor: #e1e2e1;
 $whiteColor: #f5f5f6;
-$darkColor: #263238;
+$blackColor: #263238;
 
 /*  Font  */
 $fontFamily: 'Montserrat', sans-serif;
@@ -56,7 +56,7 @@ h1 {
 }
 
 h2 {
-  color: $greenColor;
+  color: $whiteColor;
   font-weight: $boldFont;
   font-size: 2rem;
   line-height: 2.6rem;
@@ -65,12 +65,18 @@ h2 {
 
 h3 {
   font-weight: $mediumFont;
-  color: lighten($greenColor, 2%);
+  color: $whiteColor;
 }
 
+h4 {
+  color: $whiteColor;
+}
+
+ul,
+li,
 p,
 a {
-  color: $darkGreenColor;
+  color: $greyColor;
   text-decoration: none;
   line-height: 2rem;
 }
@@ -81,6 +87,20 @@ a {
   padding: 0;
   width: 100%;
   height: auto;
+}
+
+.title-white-bg {
+  color: $greenColor;
+}
+
+.description-white-bg {
+  h3 {
+    color: $greenColor;
+  }
+
+  p {
+    color: $darkGreenColor;
+  }
 }
 
 /*  Website  */
@@ -98,7 +118,7 @@ a {
   align-items: center;
   justify-content: space-between;
   background-color: $darkGreenColor;
-  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 10px 3px rgb(0 0 0 / 55%);
 
   &__logo {
     padding: 0;
@@ -209,7 +229,7 @@ a {
       }
 
       &:last-child {
-        font-size: 1.7rem;
+        font-size: 1.6rem;
       }
     }
 
@@ -223,29 +243,6 @@ a {
       background-color: $greenColor;
       border-radius: 0.5rem;
       z-index: -1;
-    }
-  }
-
-  &__scroll-button {
-    display: none;
-    background-color: lighten($greenColor, 5%);
-    border: 0;
-    margin: 0 calc(1rem - 10px) calc(1rem - 10px) calc(1rem - 10px);
-    color: $whiteColor;
-    text-transform: uppercase;
-    font-weight: $thinFont;
-    font-size: 2rem;
-    /* display: flex */
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-
-    &--icon {
-      display: none;
-      width: 2rem;
-      height: auto;
-      padding: 0.2rem;
-      margin: 0 0.3rem 0 0;
     }
   }
 }
@@ -262,7 +259,7 @@ a {
 }
 
 .opening-hours {
-  &__details {
+  &__description {
     position: relative;
     &::before {
       position: absolute;
@@ -295,16 +292,8 @@ a {
   @include defaultPadding();
   background-color: $darkGreenColor;
 
-  &__header {
-    &--title {
-      color: $greyColor;
-    }
-  }
-
   &__address {
     &--text {
-      color: $greyColor;
-
       span {
         display: block;
 
@@ -324,7 +313,7 @@ a {
 }
 
 .adoption {
-  background: $darkColor url('../assets/svg/background-string.svg') no-repeat 100% 200px / cover;
+  background: $blackColor url('../assets/svg/background-string.svg') no-repeat 100% 500px / cover;
   min-height: 100vh;
 
   &__box {
@@ -333,10 +322,6 @@ a {
 
   &__header {
     margin: 1rem 0;
-
-    &--title {
-      color: $whiteColor;
-    }
   }
 }
 
@@ -387,7 +372,7 @@ a {
   &__description {
     text-align: justify;
 
-    &--image-1 {
+    &--image-left {
       width: 70%;
       height: auto;
       border-radius: 2rem 10rem 10rem 2rem;
@@ -396,7 +381,7 @@ a {
       shape-outside: margin-box;
     }
 
-    &--image-2 {
+    &--image-right {
       width: 50%;
       height: auto;
       border-radius: 2rem 10px 10px 2rem;
@@ -414,18 +399,16 @@ a {
     @include defaultPadding();
     background-color: $greenColor;
   }
+
+  .fb-page span iframe[style] {
+    border-radius: 10px;
+  }
 }
 
 .personal-help,
 .cat-wiktor {
-  &__header {
-    &--title {
-      color: $whiteColor;
-    }
-  }
   &__description {
     &--text {
-      color: $greyColor;
       text-align: justify;
 
       span {
@@ -436,23 +419,12 @@ a {
 }
 
 .contact {
-  background-color: $darkColor;
+  background-color: $blackColor;
 
   &__box {
     @include defaultPadding();
   }
 
-  &__header {
-    &--title,
-    &--subtitle {
-      color: $whiteColor;
-    }
-  }
-  &__description {
-    &--text {
-      color: $whiteColor;
-    }
-  }
   .fb-page span iframe[style] {
     border: 1px solid $whiteColor !important;
     border-radius: 10px;
@@ -460,5 +432,49 @@ a {
 }
 
 .footer {
+  padding: 1.25rem 0 0;
   background-color: $darkGreenColor;
+}
+
+.footer-about {
+  padding: 0 1.25rem;
+
+  &__description {
+    &--link {
+      color: #6bb1ad;
+      display: inline;
+    }
+  }
+}
+.footer-nav {
+  padding: 1rem 1.25rem;
+}
+
+.social {
+  padding: 0 1.25rem 3rem;
+
+  &__link {
+    padding: 0 1.25rem;
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &--image {
+      width: 50px;
+      height: auto;
+    }
+  }
+}
+
+.author {
+  background-color: darken($darkGreenColor, 10%);
+  font-size: 0.9rem;
+  font-weight: $boldFont;
+  text-align: center;
+  padding: 1px;
+
+  &__link {
+    font-weight: $mediumFont;
+  }
 }
