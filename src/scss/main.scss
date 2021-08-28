@@ -207,6 +207,10 @@ a {
       &:nth-child(n + 4) {
         margin: 0 0 1.3rem 0;
       }
+
+      &:last-child {
+        font-size: 1.7rem;
+      }
     }
 
     &:before {
@@ -215,7 +219,7 @@ a {
       top: 100px;
       left: -0.5rem;
       width: 9rem;
-      height: 22rem;
+      height: 27rem;
       background-color: $greenColor;
       border-radius: 0.5rem;
       z-index: -1;
@@ -376,10 +380,6 @@ a {
 }
 
 .about {
-  &__bottom-shapes {
-    transform: translateY(5px);
-  }
-
   &__box {
     @include defaultPadding();
   }
@@ -412,6 +412,7 @@ a {
 
   &__box {
     @include defaultPadding();
+    background-color: $greenColor;
   }
 }
 
@@ -432,4 +433,32 @@ a {
       }
     }
   }
+}
+
+.contact {
+  background-color: $darkColor;
+
+  &__box {
+    @include defaultPadding();
+  }
+
+  &__header {
+    &--title,
+    &--subtitle {
+      color: $whiteColor;
+    }
+  }
+  &__description {
+    &--text {
+      color: $whiteColor;
+    }
+  }
+  .fb-page span iframe[style] {
+    border: 1px solid $whiteColor !important;
+    border-radius: 10px;
+  }
+}
+
+.footer {
+  background-color: $darkGreenColor;
 }
