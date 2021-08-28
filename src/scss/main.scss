@@ -217,6 +217,7 @@ a {
       width: 9rem;
       height: 22rem;
       background-color: $greenColor;
+      border-radius: 0.5rem;
       z-index: -1;
     }
   }
@@ -375,7 +376,13 @@ a {
 }
 
 .about {
-  @include defaultPadding();
+  &__bottom-shapes {
+    transform: translateY(5px);
+  }
+
+  &__box {
+    @include defaultPadding();
+  }
 
   &__description {
     text-align: justify;
@@ -401,11 +408,15 @@ a {
 }
 
 .help {
-  @include defaultPadding();
   background-color: $greenColor;
+
+  &__box {
+    @include defaultPadding();
+  }
 }
 
-.personal-help {
+.personal-help,
+.cat-wiktor {
   &__header {
     &--title {
       color: $whiteColor;
