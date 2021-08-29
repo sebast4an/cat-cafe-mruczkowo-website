@@ -87,6 +87,7 @@ a {
   padding: 0;
   width: 100%;
   height: auto;
+  transform: translateY(-2px);
 }
 
 .title-white-bg {
@@ -203,46 +204,27 @@ a {
 }
 
 .start-page {
-  background-color: $greenColor;
-  background: url('../assets/svg/start-page-background.svg');
+  background: $darkGreenColor url('../assets/svg/start-page-background.svg') fixed;
   min-height: 100vh;
   overflow: hidden;
+  text-align: center;
+
+  &__logo {
+    margin: 40% 0 0;
+    width: 70%;
+    background-color: $greenColor;
+    border-radius: 45% 45% 25% 25%;
+  }
 
   &__title {
-    margin: 1rem;
-    padding: 100px 0 0 0;
-    text-shadow: 1px 1px 20px $greenColor;
-    position: relative;
-    z-index: 1;
+    transform: translateY(-10%);
+    margin: 0 auto;
+    
 
-    &--text {
+    span {
+      position: relative;
       display: block;
-      z-index: 1;
-      margin: 0;
-
-      &:nth-child(2) {
-        margin: 0 0 1.3rem 0;
-      }
-
-      &:nth-child(n + 4) {
-        margin: 0 0 1.3rem 0;
-      }
-
-      &:last-child {
-        font-size: 1.6rem;
-      }
-    }
-
-    &:before {
-      position: absolute;
-      content: '';
-      top: 100px;
-      left: -0.5rem;
-      width: 9rem;
-      height: 27rem;
       background-color: $greenColor;
-      border-radius: 0.5rem;
-      z-index: -1;
     }
   }
 }
@@ -469,7 +451,7 @@ a {
 
 .author {
   background-color: darken($darkGreenColor, 10%);
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   font-weight: $boldFont;
   text-align: center;
   padding: 1px;
@@ -478,3 +460,5 @@ a {
     font-weight: $mediumFont;
   }
 }
+
+@import '375px';
