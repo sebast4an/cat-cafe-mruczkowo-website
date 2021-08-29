@@ -27,7 +27,7 @@ import './catsForAdoption';
   window.addEventListener('scroll', () => {
     if (scrollY > 10) navigation.classList.add('navigation--shadow');
     if (scrollY > startPageHeight) navigation.classList.add('navigation--below-start-page');
-    if (scrollY === 0) {
+    if (scrollY < 10) {
       navigation.classList.remove('navigation--below-start-page');
       navigation.classList.remove('navigation--shadow');
     }
