@@ -78,17 +78,24 @@ module.exports = {
         ],
       },
       {
-        test: /\.(svg)$/i,
+        test: /\.svg$/i,
         type: 'asset/resource',
         generator: {
           filename: 'assets/svg/[name][ext][query]',
         },
       },
       {
-        test: /\.(png|jpg)$/i,
+        test: /\.png$/i,
         type: 'asset/resource',
         generator: {
           filename: 'assets/images/[name][ext][query]',
+        },
+      },
+      {
+        test: /\.jpg$/i,
+        type: 'asset/resource',
+        generator: {
+          filename: 'cats/[name][ext][query]',
         },
       },
       {
