@@ -85,14 +85,14 @@ module.exports = {
         },
       },
       {
-        test: /\.png$/i,
+        test: /\.webp$/i,
         type: 'asset/resource',
         generator: {
           filename: 'assets/images/[name][ext][query]',
         },
       },
       {
-        test: /\.jpg$/i,
+        test: /\.(jpg|png)$/i,
         type: 'asset/resource',
         generator: {
           filename: 'cats/[name][ext][query]',

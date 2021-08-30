@@ -3,9 +3,9 @@ import '../scss/main.scss';
 
 //svg and images loader
 const importAll = r => r.keys().forEach(r);
-importAll(require.context('../cats', true, /\.jpg$/));
+importAll(require.context('../cats', true, /\.(jpg|png)$/));
 importAll(require.context('../assets/svg', true, /\.svg$/));
-importAll(require.context('../assets/images', true, /\.jpg$/));
+importAll(require.context('../assets/images', true, /\.webp/));
 
 //js
 import './catsForAdoption';
@@ -26,11 +26,9 @@ import './catsForAdoption';
   const startPageHeight = startPage - startPage * 0.2;
 
   window.addEventListener('scroll', () => {
-    if (scrollY > 10) navigation.classList.add('navigation--shadow');
+    if (scrollY > 35) navigation.classList.add('navigation--shadow');
+    if (scrollY < 35) navigation.classList.remove('navigation--shadow');
     if (scrollY > startPageHeight) navigation.classList.add('navigation--below-start-page');
-    if (scrollY < 10) {
-      navigation.classList.remove('navigation--below-start-page');
-      navigation.classList.remove('navigation--shadow');
-    }
+    if (scrollY < startPageHeight) navigation.classList.remove('navigation--below-start-page');
   });
 })();

@@ -5,6 +5,7 @@ const appendCats = data => {
   if (catsContainer == null || catsContainer == undefined) return;
   const fragment = document.createDocumentFragment();
 
+  //TODO: support for PNG
   const render = (data, key) => {
     const cat = document.createElement('section');
     cat.classList.add(`cats-adoption__cat`);
