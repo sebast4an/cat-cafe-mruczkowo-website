@@ -111,7 +111,6 @@ a {
 /*  Website  */
 .navigation {
   position: fixed;
-  z-index: 9;
   top: 0;
   left: 0;
   width: 100%;
@@ -123,6 +122,7 @@ a {
   justify-content: space-between;
   background-color: $startPageNavColor;
   transition: background 0.5s linear;
+  z-index: 2;
 
   &__logo {
     padding: 0;
@@ -205,19 +205,36 @@ a {
     }
   }
 
-  &__links-list {
-    display: none;
-    list-style-type: none;
+  &:focus {
+    border: 2px solid $greenColor;
   }
+}
 
-  &:hover {
-    .menu__hamburger-button--line {
-      background-color: $greyColor;
+.links-list {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 74px;
+  left: -100vw;
+  width: 100vw;
+  height: calc(100vh - 74px);
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  list-style-type: none;
+  background-color: $darkGreenColor;
+  transition: transform 1s ease-in-out;
+
+  &--active {
+    transform: translateX(100vw);
+
+    & > .navigation__logo {
+      transform: scale(1) translate(0);
     }
   }
 
-  &:focus {
-    border: 2px solid $greenColor;
+  &__element {
+    padding: 1.2rem;
   }
 }
 

@@ -12,12 +12,14 @@ import './catsForAdoption';
 
 (() => {
   //navigation button
-  const mobileMenuButton = document.querySelector('.menu__hamburger-button');
-  if (mobileMenuButton == null) return;
+  const mobileNavButton = document.querySelector('.menu__hamburger-button');
+  const mobileNavList = document.querySelector('.links-list');
+  if (mobileNavButton == null) return;
 
-  mobileMenuButton.addEventListener('click', e => {
+  mobileNavButton.addEventListener('click', e => {
     e.preventDefault();
-    mobileMenuButton.classList.toggle('menu__hamburger-button--active');
+    mobileNavButton.classList.toggle('menu__hamburger-button--active');
+    mobileNavList.classList.toggle('links-list--active');
   });
 
   //navigation background color
