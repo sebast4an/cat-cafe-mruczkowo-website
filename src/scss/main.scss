@@ -227,10 +227,6 @@ a {
 
   &--active {
     transform: translateX(100vw);
-
-    & > .navigation__logo {
-      transform: scale(1) translate(0);
-    }
   }
 
   &__element {

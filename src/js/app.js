@@ -14,6 +14,7 @@ import './catsForAdoption';
   //navigation button
   const mobileNavButton = document.querySelector('.menu__hamburger-button');
   const mobileNavList = document.querySelector('.links-list');
+  // const mobileNavListLink = document.querySelectorAll('.links-list__element');
   if (mobileNavButton == null) return;
 
   mobileNavButton.addEventListener('click', e => {
@@ -21,6 +22,8 @@ import './catsForAdoption';
     mobileNavButton.classList.toggle('menu__hamburger-button--active');
     mobileNavList.classList.toggle('links-list--active');
   });
+
+  //TODO: add event listener for navigation links
 
   //navigation background color
   const navigation = document.querySelector('.navigation');
