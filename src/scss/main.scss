@@ -133,7 +133,7 @@ a {
     transition: transform 0.5s ease-in-out, opacity 0.2s linear;
   }
 
-  &--shadow {
+  &--shadow-and-scaling {
     box-shadow: 0 1px 10px 3px rgb(0 0 0 / 55%);
 
     .navigation__logo {
@@ -215,7 +215,7 @@ a {
   padding: 0;
   position: absolute;
   top: 74px;
-  left: -100vw;
+  left: 100vw;
   width: 100vw;
   height: calc(100vh - 74px);
   display: flex;
@@ -223,10 +223,10 @@ a {
   justify-content: space-around;
   list-style-type: none;
   background-color: $darkGreenColor;
-  transition: transform 1s ease-in-out;
+  transition: transform 0.6s ease-in-out;
 
   &--active {
-    transform: translateX(100vw);
+    transform: translateX(-100vw);
   }
 
   &__element {
