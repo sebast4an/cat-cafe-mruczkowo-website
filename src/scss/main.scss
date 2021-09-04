@@ -150,7 +150,7 @@ a {
 .menu {
   &__hamburger-button {
     margin: 0 0.62rem 0 0;
-    width: 3.25rem;
+    width: 52px;
     display: flex;
     flex-flow: column nowrap;
     align-items: flex-end;
@@ -158,10 +158,10 @@ a {
     border: 0;
 
     &--line {
-      border-radius: 15px;
+      border-radius: 2px;
       background-color: $whiteColor;
       height: 2px;
-      margin: 0.5rem 0 0 0;
+      margin: 8px 0 0 0;
       transition: opacity 0.4s ease-in-out, transform 0.8s ease, margin 0.5s linear;
 
       &:nth-child(1) {
@@ -241,6 +241,7 @@ a {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
+  position: relative;
 
   &__title {
     margin: 0 1rem;
@@ -248,6 +249,33 @@ a {
 
     span {
       display: block;
+    }
+  }
+
+  @keyframes swipeButtonAnimation {
+    from {
+      transform: translateY(0);
+    }
+
+    to {
+      transform: translateY(10px);
+    }
+  }
+
+  &__swipe-button {
+    position: absolute;
+    bottom: 2rem;
+    left: 0;
+    margin: 0 1rem;
+    background: transparent;
+    border: 0;
+    padding: 0.2rem;
+    animation: swipeButtonAnimation 1.2s infinite alternate ease-in-out;
+
+    &--icon {
+      background: url('../assets/svg/swipe-icon.svg') no-repeat;
+      width: 45px;
+      height: 45px;
     }
   }
 }
@@ -486,4 +514,4 @@ a {
   }
 }
 
-@import '375px';
+@import '880px';
