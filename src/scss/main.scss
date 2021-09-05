@@ -282,7 +282,7 @@ a {
 
 .information {
   &__box {
-    @include defaultPadding();
+    @include defaultBoxPadding();
     padding-bottom: 6.25rem;
     min-height: 100vh;
     display: flex;
@@ -350,7 +350,7 @@ a {
   min-height: 100vh;
 
   &__box {
-    @include defaultPadding();
+    @include defaultBoxPadding();
   }
 
   &__header {
@@ -431,7 +431,7 @@ a {
   background-color: $greenColor;
 
   &__box {
-    @include defaultPadding();
+    @include defaultBoxPadding();
     background-color: $greenColor;
   }
 
@@ -457,7 +457,7 @@ a {
   background-color: $blackColor;
 
   &__box {
-    @include defaultPadding();
+    @include defaultBoxPadding();
   }
 
   .fb-page span iframe[style] {
