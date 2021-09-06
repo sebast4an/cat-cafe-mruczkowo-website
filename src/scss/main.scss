@@ -235,13 +235,22 @@ a {
 }
 
 .start-page {
-  background: $startPageNavColor url('../assets/images/start-page-bg.webp') 20% 100% / cover;
+  background-color: $startPageNavColor;
   min-height: 100vh;
-  overflow: hidden;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   position: relative;
+  overflow: hidden;
+
+  &__cat-bg {
+    position: absolute;
+    top: 0;
+    right: -120px;
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+  }
 
   &__title {
     margin: 0 1rem;
@@ -511,6 +520,14 @@ a {
 
   &__link {
     font-weight: $mediumFont;
+  }
+}
+
+@media (min-width: 550px) {
+  .start-page {
+    &__cat-bg {
+      right: 0;
+    }
   }
 }
 
