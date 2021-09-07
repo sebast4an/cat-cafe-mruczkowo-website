@@ -19,6 +19,14 @@
     }
   }
 
+  .start-page {
+    &__swipe-button {
+      &--icon {
+        background: url('../assets/svg/mouse.svg') no-repeat;
+      }
+    }
+  }
+
 }
 
 @media (min-width: 1024px) {
@@ -44,21 +52,21 @@
 }
 
 @media (min-width: 1280px) {
-  .start-page {
-    &__title {
-      transform: translateY(30px);
-      font-size: 4rem;
-      line-height: 4.5rem;
-    }
+  .navigation {
+    padding: 0 3rem;
   }
-}
 
-@media (min-width: 1600px) {
   .start-page {
+    &__cat-bg {
+      top: -2%;
+      right: 10%;
+      height: 120%;
+    }
+
     &__title {
-      transform: translateY(20px);
-      font-size: 5rem;
-      line-height: 5rem;
+      margin: 0 3.6rem;
+      font-size: 3.5rem;
+      line-height: 4.2rem;
     }
   }
 }
@@ -70,15 +78,34 @@
 
   .start-page {
     &__cat-bg {
+      top: 0;
       right: 10%;
+      height: 115%;
     }
 
     &__title {
-      font-size: 5rem;
+      font-size: 4.5rem;
+      line-height: 4.5rem;
       margin: 0 5rem;
     }
   }
+}
 
+@media (min-width: 1600px) {
+  .start-page {
+    &__title {
+      transform: translateY(20px);
+      font-size: 5rem;
+      line-height: 5rem;
+    }
+
+    &__swipe-button {
+      &--icon {
+        width: 54px;
+        height: 54px;
+      }
+    }
+  }
 }
 
 @media (min-width: 1600px) {
