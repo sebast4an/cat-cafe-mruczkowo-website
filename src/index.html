@@ -56,7 +56,12 @@
     </nav>
 
     <section class="start-page" id="start-page">
-      <img src="./assets/images/start-page-bg.webp" class="start-page__cat-bg" aria-hidden="true" alt="Zdjęcie przedatawiające twarz kota na czernym tle">
+      <img
+        src="./assets/images/start-page-bg.webp"
+        class="start-page__cat-bg"
+        aria-hidden="true"
+        alt="Zdjęcie przedatawiające twarz kota na czernym tle"
+      />
       <h1 class="start-page__title">
         <span class="start-page__title--text">Kocia</span>
         <span class="start-page__title--text">Kawiarnia</span>
@@ -72,7 +77,8 @@
 
     <main class="information" id="information">
       <img src="./assets/svg/information-top-waves.svg" class="information__top-waves svg-shapes" />
-      <div class="information__box">
+      <img src="./assets/svg/coffee-background.svg" class="information__coffee-background" />
+      <div class="information__box box-default">
         <section class="information__opening-hours opening-hours">
           <header class="opening-hours__header">
             <h2 class="opening-hours__header--title title-white-bg">Godziny otwarcia:</h2>
@@ -105,32 +111,34 @@
       </div>
     </main>
 
-    <section class="where" id="where">
-      <header class="where__header">
-        <h2 class="where__header--title">Gdzie jesteśmy?</h2>
-      </header>
-      <address class="where__address">
-        <p class="where__address--text">Znajdujemy się w Gliwicach obok sklepu zoologicznego „Zuza”.</p>
-        <p class="where__address--text">
-          <span>Dokładny adres to:</span>
-          <span>ul. Dworcowa 52</span>
-          <span>44-100 Gliwice</span>
-        </p>
-      </address>
+    <section class="where padding-default" id="where">
+      <div class="where__box box-alternative">
+        <header class="where__header">
+          <h2 class="where__header--title">Gdzie jesteśmy?</h2>
+        </header>
+        <address class="where__address">
+          <p class="where__address--text">Znajdujemy się w Gliwicach obok sklepu zoologicznego „Zuza”.</p>
+          <p class="where__address--text">
+            <span>Dokładny adres to:</span>
+            <span>ul. Dworcowa 52</span>
+            <span>44-100 Gliwice</span>
+          </p>
+        </address>
 
-      <iframe
-        title="Lokalizacja w mapach Google"
-        class="where__google-maps"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2548.788869242185!2d18.672079415725783!3d50.29586887945436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4711314a923a2e8b%3A0x5ce28fb4b4ad126f!2sKocia%20Kawiarnia%20Mruczkowo%20-%20Gliwice!5e0!3m2!1spl!2spl!4v1629991922078!5m2!1spl!2spl"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-      ></iframe>
+        <iframe
+          title="Lokalizacja w mapach Google"
+          class="where__google-maps"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2548.788869242185!2d18.672079415725783!3d50.29586887945436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4711314a923a2e8b%3A0x5ce28fb4b4ad126f!2sKocia%20Kawiarnia%20Mruczkowo%20-%20Gliwice!5e0!3m2!1spl!2spl!4v1629991922078!5m2!1spl!2spl"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
     </section>
 
     <section class="adoption" id="adoption">
       <img src="./assets/svg/adoption-top-waves.svg" class="adotion-top-waves svg-shapes" />
-      <section class="adoption__box">
+      <section class="adoption__box box-default">
         <header class="adoption__header">
           <h2 class="adoption__header--title">Mieszkańcy:</h2>
           <p class="adoption__header--subtitle">
@@ -143,7 +151,7 @@
     </section>
 
     <article class="about" id="about">
-      <div class="about__box">
+      <div class="about__box box-alternative">
         <header class="about__header">
           <h2 class="about__header--title title-white-bg">Mruczkowo</h2>
         </header>
@@ -174,7 +182,7 @@
 
     <section class="help" id="help">
       <img class="help__top-shapes svg-shapes" src="./assets/svg/cl.svg" />
-      <div class="help__box">
+      <div class="help__box box-default">
         <section class="help__personal-help personal-help">
           <header class="personal-help__header">
             <h2 class="personal-help__header--title">Każdy może pomóc</h2>
@@ -224,7 +232,7 @@
     </section>
     <section class="contact" id="contact">
       <img class="contact__top-shapes svg-shapes" src="./assets/svg/curve.svg" />
-      <div class="contact__box">
+      <div class="contact__box box-default">
         <header class="contact__header">
           <h2 class="contact__header--title">Kontakt</h2>
           <p class="contact__header--subtitle">W sprawie rezerwacji prosimy o kontakt telefoniczny lub przez wiadomość na Facebooku.</p>
