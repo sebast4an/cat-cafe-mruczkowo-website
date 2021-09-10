@@ -1,0 +1,20 @@
+@media (min-width: 1600px) {
+  .start-page {
+    &__cat-bg {
+      right: 10%;
+    }
+
+    &__title {
+      transform: translateY(20px);
+      font-size: 5rem;
+      line-height: 5rem;
+    }
+
+    &__swipe-button {
+      &--icon {
+        width: 54px;
+        height: 54px;
+      }
+    }
+  }
+}

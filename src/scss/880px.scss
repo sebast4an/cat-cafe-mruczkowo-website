@@ -1,62 +1,3 @@
-@media (min-width: 400px) {
-  .box-default {
-    padding: 2rem 2rem 4rem 2rem;
-  }
-
-  .box-alternative {
-    padding: calc(2rem + 30px) 2rem 4rem 2rem;
-  }
-
-  .information__coffee-background {
-    bottom: -40px;
-    right: -150px;
-    width: 900px;
-  }
-}
-
-@media (min-width: 550px) {
-  .start-page__cat-bg {
-    right: 0;
-  }
-
-  h2 {
-    font-size: 2.2rem;
-  }
-
-  .opening-hours__description::before {
-    top: 0;
-    right: -100px;
-    width: 50%;
-  }
-}
-
-@media (min-width: 640px) {
-  .box-default {
-    padding: 4rem 4rem 4rem 4rem;
-  }
-
-  .box-alternative {
-    padding: calc(2rem + 40px) 4rem 5rem 4rem;
-  }
-
-  .start-page__cat-bg {
-    height: 115%;
-  }
-}
-
-@media (min-width: 720px) {
-  .start-page {
-    &__title {
-      font-size: 2.5rem;
-    }
-  }
-  .information__coffee-background {
-    bottom: 5%;
-    right: unset;
-    left: 50%;
-  }
-}
-
 @media (min-width: 880px) {
   .menu {
     &__hamburger-button {
@@ -85,95 +26,21 @@
       }
     }
   }
-}
 
-@media (min-width: 1024px) {
-  .navigation {
-    padding: 0 2rem;
+  .information__box {
+    align-items: center;
   }
 
-  .start-page {
-    &__title {
-      margin: 0 2.5rem;
-      font-size: 3rem;
-      line-height: 3.6rem;
-    }
-  }
-}
-
-@media (min-width: 1100px) {
-  .start-page {
-    &__cat-bg {
-      right: 5%;
-    }
-  }
-}
-
-@media (min-width: 1280px) {
-  .navigation {
-    padding: 0 3rem;
+  .opening-hours,
+  .news {
+    grid-gap: 10rem;
   }
 
-  .start-page {
-    &__cat-bg {
-      top: -2%;
-      right: 10%;
-      height: 120%;
-    }
-
-    &__title {
-      margin: 0 3.6rem;
-      font-size: 3.5rem;
-      line-height: 4.2rem;
-    }
-  }
-}
-
-@media (min-width: 1400px) {
-  .navigation {
-    padding: 0 4.5rem;
+  .opening-hours__description::before {
+    display: block;
   }
 
-  .start-page {
-    &__cat-bg {
-      top: 0;
-      right: 10%;
-      height: 115%;
-    }
-
-    &__title {
-      font-size: 4.5rem;
-      line-height: 4.5rem;
-      margin: 0 5rem;
-    }
-  }
-}
-
-@media (min-width: 1600px) {
-  .start-page {
-    &__title {
-      transform: translateY(20px);
-      font-size: 5rem;
-      line-height: 5rem;
-    }
-
-    &__swipe-button {
-      &--icon {
-        width: 54px;
-        height: 54px;
-      }
-    }
-  }
-}
-
-@media (min-width: 1600px) {
-  .start-page {
-    &__cat-bg {
-      right: 10%;
-    }
-
-    &__title {
-      font-size: 5rem;
-    }
+  .image-information {
+    max-width: 400px;
   }
 }

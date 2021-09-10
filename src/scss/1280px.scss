@@ -1,0 +1,19 @@
+@media (min-width: 1280px) {
+  .navigation {
+    padding: 0 3rem;
+  }
+
+  .start-page {
+    &__cat-bg {
+      top: -2%;
+      right: 10%;
+      height: 120%;
+    }
+
+    &__title {
+      margin: 0 3.6rem;
+      font-size: 3.5rem;
+      line-height: 4.2rem;
+    }
+  }
+}
