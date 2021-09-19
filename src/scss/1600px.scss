@@ -1,4 +1,26 @@
 @media (min-width: 1600px) {
+  h2 {
+    font-size: 2.8rem;
+    line-height: 3.5rem;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+  }
+
+  .box-default {
+    padding: 4rem 14vw 4rem 14vw;
+  }
+
+  .box-alternative {
+    padding: calc(2rem + 40px) 14vw 5rem 14vw;
+  }
+
   .start-page {
     &__cat-bg {
       right: 10%;
@@ -16,5 +38,17 @@
         height: 54px;
       }
     }
+  }
+
+  .opening-hours__description::before {
+    left: 250px;
+  }
+
+  .description__box--text {
+    margin: 0 0 0 4rem;
+  }
+
+  .description__box--alternative .description__box--text {
+    margin: 0 4rem 0 0;
   }
 }

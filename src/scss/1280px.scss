@@ -16,4 +16,13 @@
       line-height: 4.2rem;
     }
   }
+
+  .description__box {
+    grid-template-columns: 50% 50%;
+  }
+
+  .description__box--alternative {
+    grid-template-columns: 50% 50%;
+  }
+
 }

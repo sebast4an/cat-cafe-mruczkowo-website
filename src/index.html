@@ -75,9 +75,9 @@
       </button>
     </section>
 
-    <main class="information" id="information">
+    <main class="information">
       <img src="./assets/svg/information-top-waves.svg" class="information__top-waves svg-shapes" />
-      <div class="information__box box-default">
+      <div class="information__box box-default" id="information">
         <section class="information__opening-hours opening-hours">
           <div class="opening-hours__image image-information">
             <img src="./assets/images/information_1.webp" class="image-information__photo" alt="Zdjęcie przedstawiające bar kawiarni" />
@@ -122,8 +122,8 @@
       </div>
     </main>
 
-    <section class="where" id="where">
-      <div class="where__box box-alternative">
+    <section class="where">
+      <div class="where__box box-alternative" id="where">
         <header class="where__header">
           <h2 class="where__header--title">Gdzie jesteśmy?</h2>
         </header>
@@ -147,9 +147,9 @@
       </div>
     </section>
 
-    <section class="adoption" id="adoption">
+    <section class="adoption">
       <img src="./assets/svg/adoption-top-waves.svg" class="adotion-top-waves svg-shapes" />
-      <section class="adoption__box box-default">
+      <section class="adoption__box box-default" id="adoption">
         <header class="adoption__header">
           <h2 class="adoption__header--title">Mieszkańcy:</h2>
           <p class="adoption__header--subtitle">
@@ -161,39 +161,56 @@
       </section>
     </section>
 
-    <article class="about" id="about">
-      <div class="about__box box-alternative">
+    <article class="about">
+      <div class="about__box box-alternative" id="about">
         <header class="about__header">
-          <h2 class="about__header--title title-white-bg">Mruczkowo</h2>
+          <h2 class="about__header--title title-white-bg">O Mruczkowie</h2>
         </header>
-        <section class="about__description description-white-bg">
-          <p>
-            Kocia Kawiarnia i Dom tymczasowy Mruczkowo jest otwarta dla miłośników kotów. To nowatorski typ kawiarni, ponieważ poza
-            wyśmienitymi deserami możecie Państwo pobawić się z naszymi podopiecznymi — kotami, dla których kawiarnia jest domem
-            tymczasowym. Kawiarnia działa od 2018 roku. Początkowo Mruczkowo znajdowało się w Zabrzu na ulicy 3 Maja. Obecnie jesteśmy w
-            Gliwicach na ulicy Dworcowej.
-            <img class="about__description--image-left" src="./assets/images/kocia_kawiarnia_1.webp" />
-            <strong>Wszystkie koty będące w kawiarni są do adopcji,</strong> więc jeżeli ktoś zakocha się w naszym kawiarnianym kocie, może
-            po pozytywnej weryfikacji i spełnieniu formalności zabrać go do domu i cieszyć się życiem domowego mruczka. W naszej kawiarni
-            menu nie jest obszerne, ale większość potraw jest robiona na miejscu, bo mamy kuchnię. Ciasta (na przykład sernik z frużeliną
-            jeżynową czy cytrynowe na biszkopcie) piecze Domowa Piekarenka. Można tu się napić kawy: z ekspresu, cappuccino, flat white z
-            puszystą warstwą mleka na wierzchu, latte i mrożoną frappe oraz herbaty.
-            <img class="about__description--image-right" src="./assets/images/kocia_kawiarnia_3.webp" />
-            Podajemy zimne napoje takie jak: cola, fanta, sprite, soki cappa, woda, oranżada, smoothies (zielony albo różowy), mleczne
-            shejki (bananowy lub czekoladowy). Oferujemy desery lodowe, galaretki z owocami i bitą śmietaną. Na jedzenie i picie trzeba
-            uważać na koty, ponieważ koty z natury to łakomczuchy, a kotów nie wolno dokarmiać – taki regulamin. W kociarni mruczki mają
-            drapaki i konstrukcje, na które koty mogą się wspinać, na ścianie półki, z których koty lubią patrzeć z góry na ludzi.
-            Uwielbiają leżeć na poduszkach, na krzesłach i ludzkich nogach.
-            <strong>Pamiętajcie, że teren kawiarni należy do kotów.</strong>
-          </p>
-          <p>Serdeczne zapraszamy do Mruczkowa na kawę, desery i zabawę kotami.</p>
+        <section class="about__description description description-white-bg">
+          <div class="description__box">
+            <img class="description__box--image" src="./assets/images/kocia_kawiarnia_1.webp" />
+            <span class="description__box--text">
+              <h3>Kocia Kawiarnia i Dom tymczasowy Mruczkowo.</h3>
+              <p>
+                To nowatorski typ kawiarni, ponieważ poza wyśmienitymi deserami możecie Państwo pobawić się z naszymi podopiecznymi —
+                kotami, dla których kawiarnia jest domem tymczasowym. Kawiarnia działa od 2018 roku. Początkowo Mruczkowo znajdowało się w
+                Zabrzu na ulicy 3 Maja. <a href="#where">Obecnie jesteśmy w Gliwicach na ulicy Dworcowej.</a> Wszystkie koty będące w
+                kawiarni są do adopcji.
+              </p>
+            </span>
+          </div>
+
+          <div class="description__box description__box--alternative">
+            <img class="description__box--image" src="./assets/images/kocia_kawiarnia_2.webp" />
+            <span class="description__box--text">
+              <h3>Jeżeli ktoś zakocha się w naszym kawiarnianym kocie.</h3>
+              <p>
+                Może po pozytywnej weryfikacji i spełnieniu formalności zabrać go do domu i cieszyć się życiem domowego mruczka. W naszej
+                kawiarni menu nie jest obszerne, ale większość potraw jest robiona na miejscu, bo mamy kuchnię. Ciasta (na przykład sernik z
+                frużeliną jeżynową czy cytrynowe na biszkopcie) piecze Domowa Piekarenka. Można tu napić się kawy.
+              </p>
+            </span>
+          </div>
+
+          <div class="description__box">
+            <img class="description__box--image" src="./assets/images/kocia_kawiarnia_3.webp" />
+            <span class="description__box--text">
+              <h3>Podajemy zimne i ciepłe napoje.</h3>
+              <p>
+                Oferujemy desery lodowe, galaretki z owocami i bitą śmietaną. Na jedzenie i picie trzeba uważać, ponieważ koty z natury to
+                łakomczuchy, a kotów nie wolno dokarmiać. W kociarni mruczki mają drapaki i konstrukcje, na które koty mogą się wspinać, na
+                ścianie półki, z których koty lubią patrzeć z góry na ludzi. Uwielbiają leżeć na poduszkach, na krzesłach i ludzkich nogach.
+              </p>
+            </span>
+          </div>
+          <p><strong>Serdeczne zapraszamy do Mruczkowa na kawę, desery i zabawę kotami.</strong></p>
         </section>
       </div>
     </article>
 
-    <section class="help" id="help">
+    <section class="help">
       <img class="help__top-shapes svg-shapes" src="./assets/svg/cl.svg" />
-      <div class="help__box box-default">
+      <div class="help__box box-default" id="help">
         <section class="help__personal-help personal-help">
           <header class="personal-help__header">
             <h2 class="personal-help__header--title">Każdy może pomóc</h2>
@@ -220,8 +237,8 @@
             <p class="cat-wiktor__description--text">
               Stowarzyszenie Kota Wiktora jest organizacją, której celem jest przeciwdziałanie bezdomności kotów. Jesteśmy również domem
               tymczasowym dla kotów, które są przygotowywane do adopcji. Działamy w ramach Kociej kawiarni, domu tymczasowego — Mruczkowo.
-              Zapraszamy do śledzenia nas na Facebooku.
             </p>
+            <p class="cat-wiktor__description--text">Zapraszamy do śledzenia nas na Facebooku.</p>
             <div
               class="fb-page"
               data-href="https://www.facebook.com/Stowarzyszenie-Kota-Wiktora-105901007871679/"
@@ -241,14 +258,14 @@
         </section>
       </div>
     </section>
-    <section class="contact" id="contact">
+    <section class="contact" >
       <img class="contact__top-shapes svg-shapes" src="./assets/svg/curve.svg" />
-      <div class="contact__box box-default">
+      <div class="contact__box box-default" id="contact">
         <header class="contact__header">
           <h2 class="contact__header--title">Kontakt</h2>
-          <p class="contact__header--subtitle">W sprawie rezerwacji prosimy o kontakt telefoniczny lub przez wiadomość na Facebooku.</p>
         </header>
         <section class="contact__description">
+          <p>W sprawie rezerwacji prosimy o kontakt telefoniczny lub przez wiadomość na Facebooku.</p>
           <h4>+48 555 666 777</h4>
         </section>
         <div
@@ -318,7 +335,7 @@
         </div>
       </section>
       <section class="author">
-        <p>Projekt i wykonanie: <a class="author__link" href="https://github.com/sebast4an">Sebastian Szczypiński</a></p>
+        <p>2021 © Projekt i wykonanie: <a class="author__link" href="https://github.com/sebast4an">Sebastian Szczypiński</a></p>
       </section>
     </footer>
   </body>

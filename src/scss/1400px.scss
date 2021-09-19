@@ -1,4 +1,13 @@
 @media (min-width: 1400px) {
+
+  .box-default {
+    padding: 4rem 12vw 4rem 12vw;
+  }
+
+  .box-alternative {
+    padding: calc(2rem + 40px) 12vw 5rem 12vw;
+  }
+
   .navigation {
     padding: 0 4.5rem;
   }

@@ -32,4 +32,80 @@
       grid-area: 1 / 1 / 3 / 2;
     }
   }
+
+  .description__box {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 1fr;
+    margin: 5rem 0;
+    place-items: center;
+
+    &--image {
+      grid-area: 1 / 1 / 2 / 2;
+    }
+
+    &--text {
+      grid-area: 1 / 2 / 2 / 3;
+      margin: 0 0 0 2rem;
+
+      h3 {
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        text-align: left;
+      }
+    }
+  }
+
+  .description__box--alternative {
+    grid-template-columns: 40% 60%;
+
+    .description__box--image {
+      grid-area: 1 / 2 / 2 / 3;
+    }
+
+    .description__box--text {
+      grid-area: 1 / 1 / 2 / 2;
+      margin: 0 2rem 0 0;
+    }
+  }
+
+  .help {
+    &__box {
+      display: grid;
+      grid-template-rows: 1fr;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 7vw;
+    }
+
+    &__personal-help {
+      grid-area: 1 / 1 / 2 / 2;
+    }
+
+    &__cat-wiktor {
+      grid-area: 1 / 2 / 2 / 3;
+    }
+  }
+
+  .contact {
+    &__box {
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: 10% 90%;
+      grid-gap: 2rem 7vw;
+    }
+
+    &__header {
+      grid-area: 1 / 2 / 2 / 3;
+    }
+
+    &__description {
+      grid-area: 2 / 2 / 3 / 3;
+    }
+
+    &__facebook {
+      grid-area: 1 / 1 / 3 / 2;
+    }
+
+  }
+
 }
