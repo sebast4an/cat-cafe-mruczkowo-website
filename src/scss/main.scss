@@ -109,11 +109,11 @@ a {
 }
 
 .box-default {
-  padding: 1.25rem 1.25rem 4rem 1.25rem;
+  padding: 4rem 1.25rem 4rem 1.25rem;
 }
 
 .box-alternative {
-  padding: calc(1.25rem + 30px) 1.25rem 4rem 1.25rem;
+  padding: calc(4rem + 30px) 1.25rem 4rem 1.25rem;
 }
 
 .image-information {
@@ -358,6 +358,7 @@ a {
 
 .where {
   background-color: $darkGreenColor;
+  min-height: 100vh;
 
   &__address {
     &--text {
@@ -457,6 +458,7 @@ a {
 
 .help {
   background-color: $greenColor;
+  min-height: calc(100vh + 20vh);
 
   &__box {
     background-color: $greenColor;
@@ -482,11 +484,27 @@ a {
 
 .contact {
   background-color: $blackColor;
+  min-height: 100vh;
 
-  &__image {
-    display: none;
-    max-width: 100%;
-    height: auto;
+  &__description {
+
+    &--text {
+      margin: 2rem 0;
+    }
+
+    &--number {
+      font-size: 1.3rem;
+      font-weight: $boldFont;
+      padding: 1rem;
+      margin: 2rem 0;
+      border-radius: 1rem;
+      border: 1px solid $greyColor;
+
+      span {
+        display: block;
+      }
+
+    }
   }
 
   .fb-page span iframe[style] {
@@ -498,6 +516,10 @@ a {
 .footer {
   padding: 1.25rem 0 0;
   background-color: $darkGreenColor;
+
+  h4 {
+    font-size: 1.2rem;
+  }
 }
 
 .footer-about {
@@ -512,6 +534,10 @@ a {
 }
 .footer-nav {
   padding: 1rem 1.25rem;
+
+  &__list {
+    padding: 0 0 0 1.2rem;
+  }
 }
 
 .social {
@@ -533,13 +559,19 @@ a {
 
 .author {
   background-color: darken($darkGreenColor, 10%);
-  font-size: 0.7rem;
-  font-weight: $boldFont;
+  font-size: 0.8rem;
   text-align: left;
   padding: 1px 1rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
 
   &__link {
     font-weight: $mediumFont;
+  }
+
+  p {
+    font-size: 0.8rem;
   }
 }
 
