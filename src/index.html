@@ -76,11 +76,11 @@
     </section>
 
     <main class="information">
-      <img src="./assets/svg/information-top-waves.svg" class="information__top-waves svg-shapes" />
+      <img src="./assets/svg/information-top-waves.svg" class="information__top-waves svg-shapes" aria-hidden="true" alt />
       <div class="information__box box-default" id="information">
         <section class="information__opening-hours opening-hours">
           <div class="opening-hours__image image-information">
-            <img src="./assets/images/information_1.webp" class="image-information__photo" alt="Zdjęcie przedstawiające bar kawiarni" />
+            <img src="./assets/images/information_1.webp" class="image-information__photo" aria-hidden="true" alt />
           </div>
           <div class="opening-hours__box">
             <header class="opening-hours__header">
@@ -88,17 +88,26 @@
             </header>
             <div class="opening-hours__description description-white-bg">
               <h3>Poniedziałek - Piątek</h3>
-              <p>15:00 - 20:00</p>
+              <p>12:00 - 20:00</p>
               <h3>Sobota - Niedziela</h3>
-              <p>13:00 - 19:00</p>
-              <p>Najbardziej aktualne informacje zawsze znajdziesz na facebooku.</p>
+              <p>12:00 - 20:00</p>
+              <p>
+                Czasem zdarza się, że musimy zmienić godziny otwarcia. Jeśli chcesz być na bieżąco — najświeższe informacje zawsze
+                znajdziesz na
+                <a
+                  class="opening-hours__description--link"
+                  href="https://pl-pl.facebook.com/pages/category/Pet-Cafe/Kocia-Kawiarnia-Mruczkowo-Gliwice-1512296442220341/"
+                >
+                  naszym facebooku.
+                </a>
+              </p>
             </div>
           </div>
         </section>
 
-        <section class="information__news news">
+        <section class="information__news news" aria-hidden="true">
           <div class="news__image image-information">
-            <img src="./assets/images/information_2.webp" class="image-information__photo" alt="Zdjęcie przedstawiające kota" />
+            <img src="./assets/images/information_2.webp" class="image-information__photo" aria-hidden="true" alt />
           </div>
           <div class="news__box">
             <header class="news__header">
@@ -143,6 +152,7 @@
           style="border: 0"
           allowfullscreen=""
           loading="lazy"
+          aria-hidden="true"
         ></iframe>
       </div>
     </section>
@@ -168,7 +178,7 @@
         </header>
         <section class="about__description description description-white-bg">
           <div class="description__box">
-            <img class="description__box--image" src="./assets/images/kocia_kawiarnia_1.webp" />
+            <img class="description__box--image" src="./assets/images/kocia_kawiarnia_1.webp" alt="Na zdjęciu widoczne jest wnętrze kawiarni. Widać drapak i półki ścienne dla Kotow. Dominuje kolor zielony oraz biały. Meble wyglądają na wykonane z drewna." />
             <span class="description__box--text">
               <h3>Kocia Kawiarnia 😺 i Dom tymczasowy Mruczkowo.</h3>
               <p>
@@ -181,7 +191,7 @@
           </div>
 
           <div class="description__box description__box--alternative">
-            <img class="description__box--image" src="./assets/images/kocia_kawiarnia_2.webp" />
+            <img class="description__box--image" src="./assets/images/kocia_kawiarnia_2.webp" alt="Zdjęcie przedstawia kolekcje wykonanych ręcznie z drewna kotów przypominających kolorystycznie te, które znajdują się w kawiarni." />
             <span class="description__box--text">
               <h3>Jeżeli ktoś zakocha się ❤️ w naszym kawiarnianym kocie.</h3>
               <p>
@@ -193,7 +203,7 @@
           </div>
 
           <div class="description__box">
-            <img class="description__box--image" src="./assets/images/kocia_kawiarnia_3.webp" />
+            <img class="description__box--image" src="./assets/images/kocia_kawiarnia_3.webp" alt="Zdjęcie przedstawia profesjonalny ekspres o dwóch kolbach do kawy znajdujący się w Mruczkowie." />
             <span class="description__box--text">
               <h3>Podajemy zimne i ciepłe napoje. ☕</h3>
               <p>
@@ -221,8 +231,8 @@
               to koty mają apetyt. Ucieszą się z każdej dodatkowej puszki.
             </p>
             <p class="personal-help__description--text">
-              <span>Często trafiają do nas pod opiekę koty wymagającej specjalnej opieki. 👩‍⚕️ </span> Zbyt wcześnie odebrane matce potrzebujące
-              specjalnego mleka lub chore np. na FIP — jak Paszti którego leczenie FIP-u było bardzo kosztowne.
+              <span>Często trafiają do nas pod opiekę koty wymagającej specjalnej opieki. 👩‍⚕️ </span> Zbyt wcześnie odebrane matce
+              potrzebujące specjalnego mleka lub chore np. na FIP — jak Paszti którego leczenie FIP-u było bardzo kosztowne.
             </p>
             <p class="personal-help__description--text">
               O tym, czego aktualnie najbardziej potrzebujemy — informujemy na facebooku. Zapraszamy do śledzenia naszej strony.
@@ -258,20 +268,19 @@
         </section>
       </div>
     </section>
-    <section class="contact" >
+    <section class="contact">
       <img class="contact__top-shapes svg-shapes" src="./assets/svg/curve.svg" />
       <div class="contact__box box-alternative" id="contact">
         <header class="contact__header">
           <h2 class="contact__header--title">Kontakt 📱</h2>
         </header>
         <section class="contact__description">
+          <p class="contact__description--text">W sprawie rezerwacji prosimy o kontakt telefoniczny lub przez wiadomość na Facebooku.</p>
           <p class="contact__description--text">
-            W sprawie rezerwacji prosimy o kontakt telefoniczny lub przez wiadomość na Facebooku.
-          </p>
-          <p class="contact__description--text">
-            <a class="contact__description--number" href="+48555666777">
-              <span>+48 555 666 777</span>
-              <span>Skontaktuj się z nami</span>
+            <a class="contact__description--number number-link" href="tel:517759417">
+              <img class="number-link__image" src="./assets/svg/phone.svg" />
+              <span class="number-link__number">+48 517 759 417</span>
+              <span class="number-link__text">Skontaktuj się z nami</span>
             </a>
           </p>
         </section>
@@ -305,7 +314,7 @@
       </section>
       <section class="footer__footer-nav footer-nav">
         <header class="footer-nav__header">
-          <h4 class="footer-nav__header--title">Nawigacja</h4>
+          <h4 class="footer-nav__header--title">Nawigacja:</h4>
         </header>
         <ul class="footer-nav__list">
           <li class="footer-nav__element">
@@ -333,11 +342,14 @@
           <h4 class="social__header--title">Śledź nas na:</h4>
         </header>
         <div class="social__icon">
-          <a class="social__link" href="https://pl-pl.facebook.com/pages/category/Pet-Cafe/Kocia-Kawiarnia-Mruczkowo-Gliwice-1512296442220341/">
-            <img class="social__link--image" src="./assets/svg/facebook-icon.svg" />
+          <a
+            class="social__link"
+            href="https://pl-pl.facebook.com/pages/category/Pet-Cafe/Kocia-Kawiarnia-Mruczkowo-Gliwice-1512296442220341/"
+          >
+            <img class="social__link--image" src="./assets/svg/facebook-icon.svg" alt="Ikona facebooka przekierowujące do profilu Mruczkowa na instragramie" />
           </a>
           <a hrec="social__link" href="https://www.instagram.com/explore/locations/1512296442220341/kocia-kawiarnia-mruczkowo-zabrze/">
-            <img class="social__link--image" src="./assets/svg/instagram-icon.svg" />
+            <img class="social__link--image" src="./assets/svg/instagram-icon.svg" alt="Ikona instagrama przekierowujące do profilu Mruczkowa na instragramie" />
           </a>
         </div>
       </section>
