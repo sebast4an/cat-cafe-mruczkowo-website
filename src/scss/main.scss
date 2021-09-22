@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;800&display=swap');
+@import 'normalize.css';
+
 /*  Colors  */
 $greenColor: #027470;
 $darkGreenColor: #004643;
@@ -15,10 +18,33 @@ $mediumFont: 500;
 $boldFont: 700;
 $extraBoldFont: 800;
 
-@import 'normalize.css';
-@import 'mixins';
+/*  Mixins  */
+@mixin textHighlight($color) {
+  font-weight: $boldFont;
+  color: $color;
+  letter-spacing: 1px;
+}
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;800&display=swap');
+@mixin photoRadius() {
+  border-radius: 1.2rem;
+}
+
+@mixin informationGrid($margin) {
+  margin: $margin;
+  display: grid;
+  grid-template-columns: 2fr;
+  grid-template-rows: auto;
+  grid-gap: 4rem;
+}
+
+@mixin smoothShadow() {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06), 0 2px 4px rgba(0, 0, 0, 0.06), 0 4px 8px rgba(0, 0, 0, 0.06), 0 8px 16px rgba(0, 0, 0, 0.06),
+    0 16px 32px rgba(0, 0, 0, 0.06), 0 32px 64px rgba(0, 0, 0, 0.06);
+}
+
+@mixin equivalentWhiteColor() {
+  filter: invert(200%) sepia(100%) saturate(0%) hue-rotate(272deg) brightness(96%) contrast(113%);
+}
 
 /*  Typographics and global settings  */
 *,
@@ -83,6 +109,10 @@ a {
   color: $greyColor;
   text-decoration: none;
   line-height: 2rem;
+}
+
+strong {
+  font-weight: $boldFont;
 }
 
 /*  Helper classes  */
@@ -286,24 +316,24 @@ a {
       transform: translateY(10px);
     }
   }
+}
 
-  &__swipe-button {
-    position: absolute;
-    bottom: 2rem;
-    right: 50%;
-    transform: translateX(-50%);
-    margin: 0 auto;
-    background: transparent;
-    border: 0;
-    padding: 0.2rem;
-    animation: swipeButtonAnimation 1.2s infinite alternate ease-in-out;
-    cursor: pointer;
+.swipe-button {
+  position: absolute;
+  bottom: 2rem;
+  right: 50%;
+  transform: translateX(-50%);
+  margin: 0 auto;
+  background: transparent;
+  border: 0;
+  padding: 0.2rem;
+  animation: swipeButtonAnimation 1.2s infinite alternate ease-in-out;
+  cursor: pointer;
 
-    &--icon {
-      background: url('../assets/svg/swipe-icon.svg') no-repeat;
-      width: 45px;
-      height: 45px;
-    }
+  &__icon {
+    background: url('../assets/svg/swipe-icon.svg') no-repeat;
+    width: 45px;
+    height: 45px;
   }
 }
 
@@ -328,10 +358,6 @@ a {
   &__description {
     position: relative;
 
-    &--link {
-      color: $greenColor;
-    }
-
     & p:last-child {
       display: none;
       margin: 3rem 0;
@@ -346,6 +372,10 @@ a {
       width: 35%;
       height: 100%;
     }
+  }
+
+  &__link {
+    color: $greenColor;
   }
 }
 
@@ -364,23 +394,23 @@ a {
   background-color: $darkGreenColor;
   min-height: 100vh;
 
-  &__address {
-    &--text {
-      span {
-        display: block;
-
-        &:first-child {
-          @include textHighlight($whiteColor);
-        }
-      }
-    }
-  }
-
   &__google-maps {
     width: 100%;
     height: 100%;
     min-height: 300px;
     border-radius: 0.7rem;
+  }
+}
+
+.address {
+  &__text {
+    span {
+      display: block;
+
+      &:first-child {
+        @include textHighlight($whiteColor);
+      }
+    }
   }
 }
 
@@ -406,28 +436,28 @@ a {
     &:nth-child(odd) {
       transform: rotate(1deg);
     }
+  }
 
-    &--image {
-      display: block;
-      width: 100%;
-      height: auto;
-      border-radius: 0.4rem 0.4rem 0 0;
-      border-bottom: 0;
-      overflow: hidden;
-    }
+  &__image {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 0.4rem 0.4rem 0 0;
+    border-bottom: 0;
+    overflow: hidden;
+  }
 
-    &--name {
-      margin: 0;
-      padding: 0.5rem;
-      background-color: $whiteColor;
-      border-radius: 0 0 0.4rem 0.4rem;
-      border-top: 0;
-      color: $darkGreenColor;
-      letter-spacing: 1px;
+  &__cat-name {
+    margin: 0;
+    padding: 0.5rem;
+    background-color: $whiteColor;
+    border-radius: 0 0 0.4rem 0.4rem;
+    border-top: 0;
+    color: $darkGreenColor;
+    letter-spacing: 1px;
 
-      &::first-letter {
-        text-transform: uppercase;
-      }
+    &::first-letter {
+      text-transform: uppercase;
     }
   }
 }
@@ -439,23 +469,23 @@ a {
 .description {
   &__box {
     text-align: justify;
+  }
 
-    &--image {
-      margin: 2rem 0;
-      max-width: 100%;
-      height: auto;
-      @include photoRadius();
-      @include smoothShadow();
+  &__image {
+    margin: 2rem 0;
+    max-width: 100%;
+    height: auto;
+    @include photoRadius();
+    @include smoothShadow();
+  }
+
+  &__text {
+    strong {
+      margin: 1rem 0;
+      display: block;
     }
-
-    &--text {
-      strong {
-        margin: 1rem 0;
-        display: block;
-      }
-      a {
-        color: unset;
-      }
+    a {
+      color: unset;
     }
   }
 }
@@ -475,13 +505,11 @@ a {
 
 .personal-help,
 .cat-wiktor {
-  &__description {
-    &--text {
-      text-align: justify;
+  &__text {
+    text-align: justify;
 
-      span {
-        @include textHighlight($whiteColor);
-      }
+    span {
+      @include textHighlight($whiteColor);
     }
   }
 }
@@ -490,11 +518,10 @@ a {
   background-color: $blackColor;
   min-height: 100vh;
 
-  &__description {
-    &--text {
-      margin: 2rem 0;
-    }
+  &__text {
+    margin: 2rem 0;
   }
+
   .fb-page span iframe[style] {
     border: 1px solid $whiteColor !important;
     border-radius: 10px;
@@ -561,11 +588,9 @@ a {
 .footer-about {
   padding: 0 1.25rem;
 
-  &__description {
-    &--link {
-      color: #6bb1ad;
-      display: inline;
-    }
+  &__link {
+    color: #6bb1ad;
+    display: inline;
   }
 }
 .footer-nav {
@@ -615,15 +640,24 @@ a {
   text-align: left;
   padding: 1px 1rem;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column nowrap;
   justify-content: space-between;
+  align-items: center;
+
+  &__text {
+    font-size: 0.7rem;
+
+    &:first-child {
+      margin: 0.6rem 0 0 0;
+    }
+
+    &:last-child {
+      margin: 0 0 0.6rem 0;
+    }
+  }
 
   &__link {
     font-weight: $mediumFont;
-  }
-
-  p {
-    font-size: 0.8rem;
   }
 }
 

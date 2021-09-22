@@ -10,4 +10,21 @@
   .start-page__cat-bg {
     height: 115%;
   }
+
+  .author {
+    flex-flow: row wrap;
+
+    &__text {
+      font-size: 0.8rem;
+
+      &:first-child,
+      &:last-child {
+        margin: 0.8rem;
+      }
+    }
+
+    &__link {
+      font-weight: $mediumFont;
+    }
+  }
 }
