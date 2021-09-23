@@ -415,8 +415,9 @@ strong {
 }
 
 .adoption {
-  background: $blackColor url('../assets/svg/background-string.svg') no-repeat 100% 500px / cover;
+  background-color: $blackColor;
   min-height: 100vh;
+  overflow: hidden;
 
   &__header {
     margin: 1rem 0;
@@ -427,14 +428,28 @@ strong {
   max-width: 100%;
 
   &__cat {
+    position: relative;
     margin: 40px 0;
-    box-shadow: 0 2.8px 2.2px -30px rgba(0, 0, 0, 0.008), 0 6.7px 5.3px -30px rgba(0, 0, 0, 0.012), 0 12.5px 10px -30px rgba(0, 0, 0, 0.015),
-      0 22.3px 17.9px -30px rgba(0, 0, 0, 0.018), 0 41.8px 33.4px -30px rgba(0, 0, 0, 0.022), 0 100px 80px -30px rgba(0, 0, 0, 0.03);
     transform: rotate(359deg);
     transition: transform 0.6s ease-in-out;
+    z-index: 1;
+
+    &::before {
+      content: '';
+      position: absolute;
+      inset: 0 0 0 -4rem;
+      margin: auto;
+      width: calc(100vw + 4rem);
+      background: url('../assets/svg/background-string.svg') no-repeat center center;
+      z-index: -1;
+    }
 
     &:nth-child(odd) {
-      transform: rotate(1deg);
+      transform: rotate(360deg);
+
+      &::before {
+        transform: rotate(170deg);
+      }
     }
   }
 
