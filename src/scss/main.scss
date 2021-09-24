@@ -318,6 +318,18 @@ strong {
   }
 }
 
+//only for Safari
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    .start-page__title {
+      background: unset;
+      background-clip: unset;
+      -webkit-text-fill-color: unset;
+      color: $greyColor;
+    }
+  }
+}
+
 .swipe-button {
   position: absolute;
   bottom: 2rem;
