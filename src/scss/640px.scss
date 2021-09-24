@@ -1,4 +1,9 @@
 @media (min-width: 640px) {
+
+  .fb-page {
+    width: 340px;
+  }
+
   .box-default {
     padding: 4rem 9vw 4rem 9vw;
   }
@@ -27,4 +32,5 @@
       font-weight: $mediumFont;
     }
   }
+  
 }

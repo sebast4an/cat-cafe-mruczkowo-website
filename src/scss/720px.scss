@@ -32,10 +32,6 @@
     }
   }
 
-  .adoption {
-    background: url('../assets/svg/adoption-bg.svg') fixed;
-  }
-
   .opening-hours {
     @include informationGrid(2rem 0 5rem 0);
 
@@ -77,35 +73,9 @@
     }
   }
 
-  .adoption {
-    padding: 0 0 8rem 0;
-
-    &__header {
-      background-color: $blackColor;
-      border-radius: 10px;
-    }
-  }
-
-  .cats-adoption {
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 2rem;
-    align-items: center;
-
-    &__cat {
-      height: 300px;
-      width: 310px;
-
-      &::before {
-        display: none;
-      }
-    }
-
-    &__image {
-      height: 100%;
-      object-fit: cover;
-      object-position: center;
+  .cookie {
+    &__text {
+      font-size: 0.7rem;
     }
   }
 }

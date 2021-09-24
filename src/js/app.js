@@ -4,12 +4,14 @@ import '../scss/main.scss';
 //svg and images loader
 const importAll = r => r.keys().forEach(r);
 importAll(require.context('../cats', true, /\.(jpg|png)$/));
+importAll(require.context('../assets', true, /\.ico$/));
 importAll(require.context('../assets/svg', true, /\.svg$/));
 importAll(require.context('../assets/images', true, /\.webp/));
 
 //js
 import './catsForAdoption';
 import './navigation';
+import './cookie';
 
 window.addEventListener('DOMContentLoaded', () => {
   const swipeButton = document.querySelector('.start-page__swipe-button');

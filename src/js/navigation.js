@@ -17,7 +17,7 @@ window.addEventListener('DOMContentLoaded', () => {
   const navigation = document.querySelector('.navigation');
   const navigationButton = document.querySelector('.menu__hamburger-button');
   const navigationList = document.querySelector('.links-list');
-  const desktopNavigation = window.matchMedia('(min-width: 880px');
+  const desktopNavigation = window.matchMedia('(min-width: 970px)');
 
   const activateMenuAndChangeNavigation = () => {
     changeScroll(switchScrolling);

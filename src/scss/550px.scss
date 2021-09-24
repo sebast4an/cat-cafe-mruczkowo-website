@@ -10,4 +10,8 @@
   .where__google-maps {
     min-height: 500px;
   }
+
+  .cats-adoption {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
 }

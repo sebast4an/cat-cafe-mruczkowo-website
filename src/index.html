@@ -8,20 +8,37 @@
     <meta name="keywords" content="Kocia Kawiarnia, Kocia Kawiarnia w Gliwicach, Dom tymczasowy dla Kotów" />
     <meta name="author" content="Sebastian Szczypiński" />
     <title>Kocia Kawiarnia Mruczkowo w Gliwicach</title>
+    <link rel="icon" type="image/svg+xml" href="./assets/svg/favicon.svg" />
+    <link rel="alternate icon" href="./assets/favicon.ico" />
+    <link rel="mask-icon" href="./assets/svg/favicon.svg" />
+    <link rel="apple-touch-icon" href="./assets/svg/favicon.svg" />
+    <meta name="theme-color" content="#004643" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#004643" media="(prefers-color-scheme: dark)" />
+  </head>
+  <body>
+    <div id="fb-root"></div>
+    <!-- <script>
+      window.fbAsyncInit = function () {
+        FB.init({
+          appId: '941369029811543',
+          autoLogAppEvents: true,
+          xfbml: true,
+          version: 'v12.0',
+        });
+      };
+    </script> -->
     <script
       async
       defer
       crossorigin="anonymous"
-      src="https://connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v11.0"
-      nonce="5Y80c7Te"
+      src="https://connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v12.0&appId=941369029811543&autoLogAppEvents=1"
+      nonce="kBGFPNvn"
     ></script>
-  </head>
-  <body>
     <nav class="navigation">
       <a href="#start-page" rel="index">
         <img
           class="navigation__logo"
-          src="./assets/svg/logo-mruczkowo.svg"
+          src="./assets/svg/navigation__logo-mruczkowo.svg"
           alt="Logo Kociej Kawiarni Mruczkowo przedstawiające uśmiechniętego kota, prowadzi na górę strony"
         />
       </a>
@@ -56,7 +73,7 @@
     </nav>
 
     <section class="start-page" id="start-page">
-      <img src="./assets/images/start-page-bg.webp" class="start-page__cat-bg" aria-hidden="true" alt />
+      <img src="./assets/images/start-page__background.webp" class="start-page__cat-bg" aria-hidden="true" alt />
       <h1 class="start-page__title">
         <span>Kocia</span>
         <span>Kawiarnia</span>
@@ -71,11 +88,11 @@
     </section>
 
     <main class="information">
-      <img src="./assets/svg/information-top-waves.svg" class="information__top-waves svg-shapes" aria-hidden="true" alt />
+      <img src="./assets/svg/information__top-shapes.svg" class="information__top-waves svg-shapes" loading="lazy" aria-hidden="true" alt />
       <div class="information__box box-default" id="information">
         <section class="information__opening-hours opening-hours">
           <div class="opening-hours__image image-information">
-            <img src="./assets/images/information_1.webp" class="image-information__photo" aria-hidden="true" alt />
+            <img src="./assets/images/information__content-1.webp" class="image-information__photo" loading="lazy" aria-hidden="true" alt />
           </div>
           <div class="opening-hours__box">
             <header class="opening-hours__header">
@@ -88,14 +105,14 @@
               <p>12:00 - 20:00</p>
               <p>
                 Czasem zdarza się, że musimy zmienić godziny otwarcia. Jeśli chcesz być na bieżąco — najświeższe informacje zawsze
-                znajdziesz na
                 <a
                   class="opening-hours__link"
-                  href="https://pl-pl.facebook.com/pages/category/Pet-Cafe/Kocia-Kawiarnia-Mruczkowo-Gliwice-1512296442220341/"
+                  href="https://www.facebook.com/Kocia-Kawiarnia-Mruczkowo-Gliwice-1512296442220341/"
                   target="_blank"
                   rel="noopener"
+                  title="Przejdź do profilu Mruczkowa na Facebooku"
                 >
-                  naszym facebooku.
+                  znajdziesz na naszym facebooku.
                 </a>
               </p>
             </div>
@@ -104,20 +121,25 @@
 
         <section class="information__news news" aria-hidden="true">
           <div class="news__image image-information">
-            <img src="./assets/images/information_2.webp" class="image-information__photo" aria-hidden="true" alt />
+            <img src="./assets/images/information__content-2.webp" class="image-information__photo" aria-hidden="true" alt />
           </div>
           <div class="news__box">
             <header class="news__header">
               <h2 class="news__title title-white-bg">Aktualności:</h2>
             </header>
+
             <div
               class="news__facebook fb-page"
+              style="border: 1px solid #027470; overflow: hidden"
               data-href="https://www.facebook.com/Kocia-Kawiarnia-Mruczkowo-Gliwice-1512296442220341/"
               data-tabs="timeline"
+              data-width=""
+              data-height=""
               data-small-header="true"
               data-adapt-container-width="true"
               data-hide-cover="true"
-              data-show-facepile="true"
+              data-show-facepile="false"
+              data-lazy="true"
             >
               <blockquote cite="https://www.facebook.com/Kocia-Kawiarnia-Mruczkowo-Gliwice-1512296442220341/" class="fb-xfbml-parse-ignore">
                 <a href="https://www.facebook.com/Kocia-Kawiarnia-Mruczkowo-Gliwice-1512296442220341/">Kocia Kawiarnia Mruczkowo Gliwice</a>
@@ -136,9 +158,9 @@
         <address class="where__address address">
           <p class="address__text">Znajdujemy się w Gliwicach obok sklepu zoologicznego „Zuza”.</p>
           <p class="address__text">
-            <span>Dokładny adres to:</span>
-            <span>ul. Dworcowa 52A</span>
-            <span>44-100 Gliwice</span>
+            <span class="address__exact">Dokładny adres to:</span>
+            <span class="address__exact">ul. Dworcowa 52A</span>
+            <span class="address__exact">44-100 Gliwice</span>
           </p>
         </address>
 
@@ -155,7 +177,7 @@
     </section>
 
     <section class="adoption">
-      <img src="./assets/svg/adoption-top-waves.svg" class="adotion-top-waves svg-shapes" aria-hidden="true" alt />
+      <img src="./assets/svg/adoption__top-shapes.svg" class="adotion-top-waves svg-shapes" aria-hidden="true" loading="lazy" alt />
       <section class="adoption__box box-default" id="adoption">
         <header class="adoption__header">
           <h2>Mieszkańcy: 😻</h2>
@@ -177,8 +199,9 @@
           <div class="description__box">
             <img
               class="description__image"
-              src="./assets/images/kocia_kawiarnia_1.webp"
+              src="./assets/images/about__content-1.webp"
               alt="Na zdjęciu widoczne jest wnętrze kawiarni, drapak i półki ścienne dla Kotów. Dominuje kolor zielony oraz biały. Meble wyglądają na wykonane z drewna."
+              loading="lazy"
             />
             <span class="description__text">
               <h3>Kocia Kawiarnia 😺 i Dom tymczasowy Mruczkowo.</h3>
@@ -194,8 +217,9 @@
           <div class="description__box description__box--alternative">
             <img
               class="description__image"
-              src="./assets/images/kocia_kawiarnia_2.webp"
+              src="./assets/images/about__content-2.webp"
               alt="Zdjęcie przedstawia kolekcje wykonanych ręcznie z drewna kotów przypominających kolorystycznie te, które znajdują się w kawiarni."
+              loading="lazy"
             />
             <span class="description__text">
               <h3>Jeżeli ktoś zakocha się ❤️ w naszym kawiarnianym kocie.</h3>
@@ -210,8 +234,9 @@
           <div class="description__box">
             <img
               class="description__image"
-              src="./assets/images/kocia_kawiarnia_3.webp"
+              src="./assets/images/about__content-3.webp"
               alt="Zdjęcie przedstawia profesjonalny ekspres o dwóch kolbach do kawy znajdujący się w Mruczkowie."
+              loading="lazy"
             />
             <span class="description__text">
               <h3>Podajemy zimne i ciepłe napoje. ☕</h3>
@@ -228,7 +253,7 @@
     </article>
 
     <section class="help">
-      <img class="help__top-shapes svg-shapes" src="./assets/svg/cl.svg" aria-hidden="true" alt />
+      <img class="help__top-shapes svg-shapes" src="./assets/svg/help__top-shapes.svg" aria-hidden="true" loading="lazy" alt />
       <div class="help__box box-default" id="help">
         <section class="help__personal-help personal-help">
           <header class="personal-help__header">
@@ -240,7 +265,7 @@
               to koty mają apetyt. Ucieszą się z każdej dodatkowej puszki.
             </p>
             <p class="personal-help__text">
-              <span>Często trafiają do nas pod opiekę koty wymagającej specjalnej opieki. 👩‍⚕️ </span> Zbyt wcześnie odebrane matce
+              <strong>Często trafiają do nas pod opiekę koty wymagającej specjalnej opieki. 👩‍⚕️ </strong> Zbyt wcześnie odebrane matce
               potrzebujące specjalnego mleka lub chore np. na FIP — jak Paszti którego leczenie FIP-u było bardzo kosztowne.
             </p>
             <p class="personal-help__text">
@@ -258,27 +283,22 @@
               tymczasowym dla kotów, które są przygotowywane do adopcji. Działamy w ramach Kociej kawiarni, domu tymczasowego — Mruczkowo.
             </p>
             <p class="cat-wiktor__text">Zapraszamy do śledzenia nas na Facebooku.</p>
-            <div
+            <iframe
               class="fb-page"
-              data-href="https://www.facebook.com/Stowarzyszenie-Kota-Wiktora-105901007871679/"
-              data-tabs=""
-              data-width=""
-              data-height=""
-              data-small-header="true"
-              data-adapt-container-width="true"
-              data-hide-cover="true"
-              data-show-facepile="true"
-            >
-              <blockquote cite="https://www.facebook.com/Stowarzyszenie-Kota-Wiktora-105901007871679/" class="fb-xfbml-parse-ignore">
-                <a href="https://www.facebook.com/Stowarzyszenie-Kota-Wiktora-105901007871679/">Stowarzyszenie Kota Wiktora</a>
-              </blockquote>
-            </div>
+              src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FStowarzyszenie-Kota-Wiktora-105901007871679%2F&tabs&width=340&height=70&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false&appId"
+              height="70"
+              style="border: none; overflow: hidden"
+              scrolling="no"
+              frameborder="0"
+              allowfullscreen="true"
+              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture"
+            ></iframe>
           </div>
         </section>
       </div>
     </section>
     <section class="contact">
-      <img class="contact__top-shapes svg-shapes" src="./assets/svg/curve.svg" aria-hidden="true" alt />
+      <img class="contact__top-shapes svg-shapes" src="./assets/svg/contact__top-shapes.svg" aria-hidden="true" loading="lazy" alt />
       <div class="contact__box box-alternative" id="contact">
         <header class="contact__header">
           <h2>Kontakt 📱</h2>
@@ -286,24 +306,31 @@
         <section class="contact__description">
           <p class="contact__text">W sprawie rezerwacji prosimy o kontakt telefoniczny lub przez wiadomość na Facebooku.</p>
           <p class="contact__text">
-            <a role="button" class="contact__description--number number-link" href="tel:517759417">
-              <img class="number-link__image" src="./assets/svg/phone.svg" aria-hidden="true" />
+            <a role="button" class="contact__description--number number-link" href="tel:517759417" title="Zadzwoń do nas">
+              <img class="number-link__image" src="./assets/svg/contact__button-link-icon.svg" aria-hidden="true" loading="lazy" alt />
               <span class="number-link__number">+48 517 759 417</span>
               <span class="number-link__text">Skontaktuj się z nami</span>
             </a>
           </p>
         </section>
+
         <div
           class="contact__facebook fb-page"
+          style="border-radius: 0.6rem"
           data-href="https://www.facebook.com/Kocia-Kawiarnia-Mruczkowo-Gliwice-1512296442220341/"
           data-tabs="messages"
+          data-width="300"
+          data-height=""
           data-small-header="true"
           data-adapt-container-width="true"
           data-hide-cover="true"
-          data-show-facepile="true"
+          data-show-facepile="false"
+          data-lazy="true"
         >
           <blockquote cite="https://www.facebook.com/Kocia-Kawiarnia-Mruczkowo-Gliwice-1512296442220341/" class="fb-xfbml-parse-ignore">
-            <a href="https://www.facebook.com/Kocia-Kawiarnia-Mruczkowo-Gliwice-1512296442220341/">Kocia Kawiarnia Mruczkowo Gliwice</a>
+            <a href="https://www.facebook.com/Kocia-Kawiarnia-Mruczkowo-Gliwice-1512296442220341/"
+              >Jeżeli okienko Facebook'a się nie wyświetla — wyłącz mechanizm blokowania reklam (np. Adblock, Disconnect)</a
+            >
           </blockquote>
         </div>
       </div>
@@ -312,7 +339,7 @@
     <footer class="footer" id="footer">
       <section class="footer__about footer-about">
         <header class="footer-about__header">
-          <h4>Mruczkowo 😺</h4>
+          <h4 class="footer-about__title footer__title">Mruczkowo 😺</h4>
         </header>
         <section class="footer-about__description">
           <p>
@@ -323,7 +350,7 @@
       </section>
       <section class="footer__footer-nav footer-nav">
         <header class="footer-nav__header">
-          <h4 class="footer-nav__header--title">Nawigacja:</h4>
+          <h4 class="footer-nav__title footer__title">Nawigacja:</h4>
         </header>
         <ul class="footer-nav__list">
           <li class="footer-nav__element">
@@ -348,31 +375,35 @@
       </section>
       <section class="footer__social social">
         <header class="social__header">
-          <h4>Śledź nas na:</h4>
+          <h4 class="social__title footer__title">Śledź nas na:</h4>
         </header>
         <div class="social__icon">
           <a
             class="social__link"
-            href="https://pl-pl.facebook.com/pages/category/Pet-Cafe/Kocia-Kawiarnia-Mruczkowo-Gliwice-1512296442220341/"
+            href="https://www.facebook.com/Kocia-Kawiarnia-Mruczkowo-Gliwice-1512296442220341/"
             target="_blank"
             rel="noopener"
+            title="Przejdź do profilu Mruczkowa na Facebooku"
           >
             <img
               class="social__link--image"
-              src="./assets/svg/facebook-icon.svg"
-              alt="Ikona facebooka przekierowująca do profilu Mruczkowa na instragramie"
+              src="./assets/svg/footer__social-icon-facebook.svg"
+              alt="Ikona facebooka przekierowująca do profilu Mruczkowa na Facebooku"
+              loading="lazy"
             />
           </a>
           <a
             class="social__link"
-            href="https://www.instagram.com/explore/locations/1512296442220341/kocia-kawiarnia-mruczkowo-zabrze/"
+            href="https://www.instagram.com/mruczkowo/"
             target="_blank"
             rel="noopener"
+            title="Przejdź do profilu Mruczkowa na Instagramie"
           >
             <img
               class="social__link--image"
-              src="./assets/svg/instagram-icon.svg"
-              alt="Ikona instagrama przekierowująca do profilu Mruczkowa na instragramie"
+              src="./assets/svg/footer__social-icon-instagram.svg"
+              alt="Ikona instagrama przekierowująca do profilu Mruczkowa na Instragramie"
+              loading="lazy"
             />
           </a>
         </div>

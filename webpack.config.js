@@ -78,6 +78,13 @@ module.exports = {
         ],
       },
       {
+        test: /\.ico$/i,
+        type: 'asset/resource',
+        generator: {
+          filename: 'assets/[name][ext][query]',
+        },
+      },
+      {
         test: /\.svg$/i,
         type: 'asset/resource',
         generator: {
