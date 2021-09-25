@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width,  initial-scale=1.0" />
     <meta name="description" content="Kocia kawiarnia to dom tymczasowy dla kotów. Zapraszamy na kawę. Znajdujemy się w Gliwicach" />
     <meta name="keywords" content="Kocia Kawiarnia, Kocia Kawiarnia w Gliwicach, Dom tymczasowy dla Kotów" />
-    <meta name="author" content="Sebastian Szczypiński" />
     <title>Kocia Kawiarnia Mruczkowo w Gliwicach</title>
     <link rel="icon" type="image/svg+xml" href="./assets/svg/favicon.svg" />
     <link rel="alternate icon" href="./assets/favicon.ico" />
@@ -17,22 +16,12 @@
   </head>
   <body>
     <div id="fb-root"></div>
-    <!-- <script>
-      window.fbAsyncInit = function () {
-        FB.init({
-          appId: '941369029811543',
-          autoLogAppEvents: true,
-          xfbml: true,
-          version: 'v12.0',
-        });
-      };
-    </script> -->
     <script
       async
       defer
       crossorigin="anonymous"
-      src="https://connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v12.0&appId=941369029811543&autoLogAppEvents=1"
-      nonce="kBGFPNvn"
+      src="https://connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v12.0"
+      nonce="GxszluMH"
     ></script>
     <nav class="navigation">
       <a href="#start-page" rel="index">
@@ -142,7 +131,7 @@
               data-lazy="true"
             >
               <blockquote cite="https://www.facebook.com/Kocia-Kawiarnia-Mruczkowo-Gliwice-1512296442220341/" class="fb-xfbml-parse-ignore">
-                <a href="https://www.facebook.com/Kocia-Kawiarnia-Mruczkowo-Gliwice-1512296442220341/">Kocia Kawiarnia Mruczkowo Gliwice</a>
+                <a href="https://www.facebook.com/Kocia-Kawiarnia-Mruczkowo-Gliwice-1512296442220341/">Jeżeli okienko Facebook'a się nie wyświetla — wyłącz mechanizm blokowania reklam (np. Adblock, Disconnect)</a>
               </blockquote>
             </div>
           </div>
@@ -152,18 +141,19 @@
 
     <section class="where">
       <div class="where__box box-alternative" id="where">
-        <header class="where__header">
-          <h2>Gdzie jesteśmy? 🗺️</h2>
-        </header>
-        <address class="where__address address">
-          <p class="address__text">Znajdujemy się w Gliwicach obok sklepu zoologicznego „Zuza”.</p>
-          <p class="address__text">
-            <span class="address__exact">Dokładny adres to:</span>
-            <span class="address__exact">ul. Dworcowa 52A</span>
-            <span class="address__exact">44-100 Gliwice</span>
-          </p>
-        </address>
-
+        <div class="where__address-box">
+          <header class="where__header">
+            <h2>Gdzie jesteśmy? 🗺️</h2>
+          </header>
+          <address class="where__address address">
+            <p class="address__text">Znajdujemy się w Gliwicach obok sklepu zoologicznego „Zuza”.</p>
+            <p class="address__text">
+              <span class="address__exact">Dokładny adres to:</span>
+              <span class="address__exact">ul. Dworcowa 52A</span>
+              <span class="address__exact">44-100 Gliwice</span>
+            </p>
+          </address>
+        </div>
         <iframe
           title="Lokalizacja w mapach Google"
           class="where__google-maps"
@@ -300,19 +290,22 @@
     <section class="contact">
       <img class="contact__top-shapes svg-shapes" src="./assets/svg/contact__top-shapes.svg" aria-hidden="true" loading="lazy" alt />
       <div class="contact__box box-alternative" id="contact">
-        <header class="contact__header">
-          <h2>Kontakt 📱</h2>
-        </header>
-        <section class="contact__description">
-          <p class="contact__text">W sprawie rezerwacji prosimy o kontakt telefoniczny lub przez wiadomość na Facebooku.</p>
-          <p class="contact__text">
-            <a role="button" class="contact__description--number number-link" href="tel:517759417" title="Zadzwoń do nas">
-              <img class="number-link__image" src="./assets/svg/contact__button-link-icon.svg" aria-hidden="true" loading="lazy" alt />
-              <span class="number-link__number">+48 517 759 417</span>
-              <span class="number-link__text">Skontaktuj się z nami</span>
-            </a>
-          </p>
-        </section>
+
+        <div class="contact__info-box">
+          <header class="contact__header">
+            <h2>Kontakt 📱</h2>
+          </header>
+          <section class="contact__description">
+            <p class="contact__text">W sprawie rezerwacji prosimy o kontakt telefoniczny lub przez wiadomość na Facebooku.</p>
+            <p class="contact__text">
+              <a role="button" class="contact__description--number number-link" href="tel:517759417" title="Zadzwoń do nas">
+                <img class="number-link__image" src="./assets/svg/contact__button-link-icon.svg" aria-hidden="true" loading="lazy" alt />
+                <span class="number-link__number">+48 517 759 417</span>
+                <span class="number-link__text">Skontaktuj się z nami</span>
+              </a>
+            </p>
+          </section>
+        </div>
 
         <div
           class="contact__facebook fb-page"

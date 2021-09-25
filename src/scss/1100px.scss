@@ -15,17 +15,8 @@
       grid-gap: 0 3rem;
     }
 
-    &__header {
-      grid-area: 1 / 2 / 2 / 3;
-      margin: 0;
-
-      &--title {
-        margin: 0;
-      }
-    }
-
-    &__address {
-      grid-area: 2 / 2 / 3 / 3;
+    &__address-box {
+      grid-area: 1 / 2 / 3 / 3;
     }
 
     &__google-maps {

@@ -13,6 +13,7 @@ import './catsForAdoption';
 import './navigation';
 import './cookie';
 
+// swipe button on start page
 window.addEventListener('DOMContentLoaded', () => {
   const swipeButton = document.querySelector('.start-page__swipe-button');
 
