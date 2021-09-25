@@ -432,6 +432,11 @@ strong {
   a {
     color: $darkGreenColor;
   }
+
+  &__facebook iframe {
+    border: 1px solid #027470 !important;
+    border-radius: 10px;
+  }
 }
 
 .where {
@@ -577,7 +582,6 @@ strong {
   .fb_iframe_widget iframe {
     border-radius: 0.6rem;
   }
-
 }
 
 .number-link {
