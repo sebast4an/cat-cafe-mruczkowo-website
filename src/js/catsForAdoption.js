@@ -8,10 +8,14 @@ const appendCats = data => {
   const render = (data, key) => {
     const cat = document.createElement('section');
     cat.classList.add(`cats-adoption__cat`);
-    const imageSrc = `./cats/${data[key].toLowerCase()}.jpg"`;
+
+    const imageSrc = `./cats/${data[key].toLowerCase()}"`;
+    const searchFileExtension = data[key].indexOf('.');
+    const catName = data[key].slice(0, searchFileExtension);
+
     cat.innerHTML = `
-      <img class="cats-adoption__image" src="${imageSrc}" alt="Zdjęcie przedstawiające kota o imieniu ${data[key]}" loading="lazy" />
-      <h3 class="cats-adoption__cat-name">${data[key]}</h3>
+      <img class="cats-adoption__image" src="${imageSrc}" alt="Zdjęcie przedstawiające kota o imieniu ${catName}" loading="lazy" />
+      <h3 class="cats-adoption__cat-name">${catName}</h3>
     `;
     fragment.appendChild(cat);
   };

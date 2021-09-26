@@ -98,7 +98,7 @@ module.exports = {
         },
       },
       {
-        test: /\.(jpg|png)$/i,
+        test: /\.(jpg|jpeg)$/i,
         type: 'asset/resource',
         generator: {
           filename: 'cats/[name][ext][query]',

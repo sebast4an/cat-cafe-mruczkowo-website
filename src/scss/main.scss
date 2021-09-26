@@ -304,7 +304,7 @@ strong {
     padding: 1.2rem;
 
     &:last-child {
-      margin: 0 0 3rem 0;
+      margin: 0 0 4rem 0;
     }
   }
 }
@@ -491,7 +491,7 @@ strong {
     margin: 40px 0;
     transition: transform 0.6s ease-in-out;
     z-index: 1;
-    height: 350px;
+    height: 400px;
     width: 100%;
     @include smoothShadow();
 
@@ -519,14 +519,11 @@ strong {
     padding: 0.5rem;
     background-color: $whiteColor;
     border-radius: 0 0 0.4rem 0.4rem;
-    border-top: 0;
     color: $darkGreenColor;
+    font-size: 1rem;
     letter-spacing: 1px;
     transform: translateY(-1px);
-
-    &::first-letter {
-      text-transform: uppercase;
-    }
+    text-transform: capitalize;
   }
 }
 
@@ -547,15 +544,8 @@ strong {
     @include smoothShadow();
   }
 
-  &__text {
-    strong {
-      margin: 1rem 0;
-      display: block;
-    }
-
-    a {
-      color: unset;
-    }
+  &__title {
+    text-align: left;
   }
 }
 
@@ -581,6 +571,10 @@ strong {
 
   &__text {
     margin: 2rem 0;
+  }
+
+  &__link {
+    color: lighten($lightGreenColor, 15%);
   }
 
   .fb_iframe_widget iframe {
@@ -649,7 +643,7 @@ strong {
   padding: 0 1.25rem;
 
   &__link {
-    color: #6bb1ad;
+    color: lighten($lightGreenColor, 15%);
     display: inline;
   }
 }
