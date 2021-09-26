@@ -33,6 +33,10 @@
         transition: tranform 0.5s ease-in-out;
       }
 
+      &:last-child {
+        margin: 0;
+      }
+
       &:hover {
         transform: scale(1.12);
 

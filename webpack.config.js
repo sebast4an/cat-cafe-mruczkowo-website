@@ -23,7 +23,6 @@ module.exports = {
       index: 'index.html',
     },
   },
-  devtool: 'source-map',
   experiments: {
     topLevelAwait: true,
   },

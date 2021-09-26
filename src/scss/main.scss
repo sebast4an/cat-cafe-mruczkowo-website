@@ -302,6 +302,10 @@ strong {
 
   &__element {
     padding: 1.2rem;
+
+    &:last-child {
+      margin: 0 0 3rem 0;
+    }
   }
 }
 
@@ -462,7 +466,7 @@ strong {
 }
 
 .adoption {
-  background: $blackColor url('../assets/svg/adoption__background.svg') fixed;
+  background: $blackColor url('../assets/svg/adoption__background.svg') fixed; /* Background from tool: svgbackgrounds.com */
   min-height: 100vh;
   overflow: hidden;
   padding: 0 0 8rem 0;
