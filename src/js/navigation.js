@@ -1,15 +1,18 @@
 window.addEventListener('DOMContentLoaded', () => {
   let switchScrolling = 'disable';
+  const logoLink = document.querySelector('.navigation__logo-link');
   const preventDefault = e => e.preventDefault();
 
   const changeScroll = option => {
     if (option === 'disable') {
       document.body.addEventListener('touchmove', preventDefault, { passive: false });
       document.body.style.overflow = 'hidden';
+      logoLink.style.pointerEvents = 'none';
       switchScrolling = 'enable';
     } else {
       document.body.removeEventListener('touchmove', preventDefault);
       document.body.style = '';
+      logoLink.style.pointerEvents = '';
       switchScrolling = 'disable';
     }
   };

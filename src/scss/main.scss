@@ -227,6 +227,7 @@ strong {
     align-items: flex-end;
     background-color: transparent;
     border: 0;
+    cursor: pointer;
 
     &--line {
       border-radius: 2px;
@@ -304,7 +305,7 @@ strong {
     padding: 1.2rem;
 
     &:last-child {
-      margin: 0 0 4rem 0;
+      margin: 0 0 4.5rem 0;
     }
   }
 }
@@ -351,7 +352,7 @@ strong {
   }
 }
 
-//only for Safari
+/* only for Safari */
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) {
     .start-page__title {
@@ -592,6 +593,7 @@ strong {
   align-items: center;
   max-width: 300px;
   transition: background 0.5s ease-in-out;
+  cursor: pointer;
 
   &__image {
     grid-area: 1 / 1 / 3 / 2;
@@ -744,6 +746,7 @@ strong {
     color: lighten($cookieColor, 20%);
     margin: 1rem 10px;
     transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+    cursor: pointer;
 
     &:hover {
       background-color: lighten($cookieColor, 20%);
