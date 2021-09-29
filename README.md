@@ -84,5 +84,4 @@ npm run format
   "dependencies": {
     "normalize.css": "^8.0.1"
   }
-}
 ```
