@@ -305,7 +305,7 @@ strong {
     padding: 1.2rem;
 
     &:last-child {
-      margin: 0 0 4.5rem 0;
+      margin: 0 0 4.2rem 0; /* because Phone browser bottom address bar to disturb */
     }
   }
 }

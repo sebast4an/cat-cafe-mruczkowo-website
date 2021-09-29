@@ -6,7 +6,7 @@ window.addEventListener('DOMContentLoaded', () => {
     cookieElement.classList.add('cookie');
     cookieElement.setAttribute('aria-hidden', 'true');
     cookieElement.innerHTML = `
-      <p class="cookie__text">Ta strona korzysta z plików cookie. Korzystanie ze strony jest równoznaczne ze zgodną na ich użycie.</p>
+      <p class="cookie__text">Ta strona korzysta z plików cookie. Korzystanie ze strony jest równoznaczne ze zgodą na ich użycie.</p>
       <button type="button" class="cookie__ok-button">OK</button> 
     `;
 
