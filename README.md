@@ -26,7 +26,7 @@ https://kocia-kawiarnia-mruczkowo.pl
 | Babel             | _JavaScript compiler_       |
 | Autoprefixer      | _Add prefixes for browsers_ |
 
-[All dependencies list](#all-dependencies-list)
+[All dependencies list](#all-dependencies-list-)
 
 ## Using 💾:
 
