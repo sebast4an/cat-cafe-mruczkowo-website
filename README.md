@@ -1,12 +1,11 @@
 # Cat Cafe Mruczkowo in Gliwice 😺
 
-Website for my client. Client needed landing page without CMS. Website had to contain information section about cafe (text prepared by the Client) and contact section with make call button. In cafe domination green color so, on the website needed green and dark colors. Before coding client wanted to see design proposition in Figma and help him in buying domain and later deploy the website with config DNS records A / AAA.
+Website for my client. Client needed landing page without CMS. Website had to contain information section about cafe and contact section with make call button. In cafe domination green color so, on the website were needed green and dark colors. Before coding client wanted to see design proposition in Figma and help him in buying domain and later deploy the website with config DNS records.
 
 ## Live 📍:
 https://kocia-kawiarnia-mruczkowo.pl
 
-
-## Detailed customer expectations:
+## Detailed customer expectations :
 - The website needs to be lightweight and load very fast
 - Bigger logo only in start page
 - News section with a view of new Facebook posts
@@ -20,8 +19,8 @@ https://kocia-kawiarnia-mruczkowo.pl
 | Tech              | Description                 |
 | ----------------- | --------------------------- |
 | JavaScript        | _ES6 syntax_                |
-| Webpack 5         | _Builder_                   |
 | SASS              | _CSS preprocessors_         |
+| Webpack 5         | _Builder_                   |
 | ESLint            | _Static code analysis_      |
 | Prettier          | _Code formatter_            |
 | Babel             | _JavaScript compiler_       |
@@ -29,7 +28,7 @@ https://kocia-kawiarnia-mruczkowo.pl
 
 [All dependencies list](#all-dependencies-list)
 
-## Using:
+## Using 💾:
 
 Installation:
 ```
@@ -52,7 +51,7 @@ npm run format
 ```
 
 
-## All dependencies list:
+## All dependencies list :
 ```
 "devDependencies": {
     "@babel/core": "^7.15.0",
