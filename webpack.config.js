@@ -77,7 +77,7 @@ module.exports = {
         ],
       },
       {
-        test: /\.ico$/i,
+        test: /\.(ico|pdf)$/i,
         type: 'asset/resource',
         generator: {
           filename: 'assets/[name][ext][query]',

@@ -477,6 +477,10 @@ strong {
     background-color: $blackColor;
     border-radius: 10px;
   }
+
+  &__link {
+    color: $lightGreenColor;
+  }
 }
 
 .cats-adoption {

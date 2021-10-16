@@ -8,10 +8,14 @@ importAll(require.context('../assets', true, /\.ico$/));
 importAll(require.context('../assets/svg', true, /\.svg$/));
 importAll(require.context('../assets/images', true, /\.webp/));
 
+//adoption form (PDF)
+import '../assets/formularz_adopcyjny.pdf';
+
 //js
 import './catsForAdoption';
 import './navigation';
 import './cookie';
+import './adoptionForm';
 
 // swipe button on start page
 window.addEventListener('DOMContentLoaded', () => {
