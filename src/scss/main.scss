@@ -473,10 +473,35 @@ strong {
   padding: 0 0 8rem 0;
 
   &__header {
-    margin: 1rem 0;
+    margin: 1rem 0 0 0;
+    padding: 0 0 10px 0;
     background-color: $blackColor;
     border-radius: 10px;
   }
+
+  &__link {
+    color: $lightGreenColor;
+  }
+}
+
+.downloadlink {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  background-color: $blackColor;
+  margin: 0;
+  max-width: 260px;
+
+  &__image {
+    width: 30px;
+    height: auto;
+  }
+
+  &__text {
+    margin: 0 0 0 12px;
+    font-size: 1.1rem;
+  }
+
 }
 
 .cats-adoption {
