@@ -492,6 +492,19 @@ strong {
   margin: 0;
   max-width: 260px;
 
+  &--transparent {
+    background-color: transparent;
+    color: $darkGreenColor;
+    max-width: 800px;
+  }
+
+  &--contact {
+    margin: 15px 0 25px 0;
+    background-color: transparent;
+    color: $greyColor;
+    max-width: 800px;
+  }
+
   &__image {
     width: 30px;
     height: auto;

@@ -8,14 +8,15 @@ importAll(require.context('../assets', true, /\.ico$/));
 importAll(require.context('../assets/svg', true, /\.svg$/));
 importAll(require.context('../assets/images', true, /\.webp/));
 
-//adoption form (PDF)
+//PDF files
 import '../assets/formularz_adopcyjny.pdf';
+import '../assets/regulamin_kawiarni.pdf';
 
 //js
 import './catsForAdoption';
 import './navigation';
 import './cookie';
-import './adoptionForm';
+import './generatePDF';
 
 // swipe button on start page
 window.addEventListener('DOMContentLoaded', () => {
