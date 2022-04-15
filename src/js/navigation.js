@@ -31,7 +31,7 @@ window.addEventListener('DOMContentLoaded', () => {
     if (!navigation.classList.contains('navigation--green')) navigation.classList.add('navigation--green');
     else if (scrollY < 35) navigation.classList.remove('navigation--green');
 
-    //changes navigation logo to smal when is bigger
+    //changes navigation logo to small when is bigger
     if (scrollY > 35) return;
     else if (!navigation.classList.contains('navigation--shadow-and-scaling')) navigation.classList.add('navigation--shadow-and-scaling');
     else navigation.classList.remove('navigation--shadow-and-scaling');

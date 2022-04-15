@@ -6,7 +6,7 @@ const importAll = r => r.keys().forEach(r);
 importAll(require.context('../cats', true, /\.(jpg|jpeg)$/));
 importAll(require.context('../assets', true, /\.ico$/));
 importAll(require.context('../assets/svg', true, /\.svg$/));
-importAll(require.context('../assets/images', true, /\.webp/));
+importAll(require.context('../assets/images', true, /\.(webp|png)/));
 
 //PDF files
 import '../assets/formularz_adopcyjny.pdf';

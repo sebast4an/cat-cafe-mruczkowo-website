@@ -444,6 +444,15 @@ strong {
   }
 }
 
+.regulations {
+  width: 100%;
+
+  &__image {
+    max-width: 100%;
+    object-fit: scale-down;
+  }
+}
+
 .where {
   background-color: $darkGreenColor;
   min-height: 100vh;
